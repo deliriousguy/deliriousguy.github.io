@@ -36,7 +36,6 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
       </video>
     </td>
   </tr>
-</table>
 
 ### [Raspberry Pi Active Buzzer System]
 * **The Goal:** Create a programmable audible alert system.
