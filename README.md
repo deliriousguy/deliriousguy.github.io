@@ -21,18 +21,18 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 ### [Raspberry Pi Ultrasonic Sensor Project]
 * **The Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
 * **The Build:** Integrated HC-SR04 ultrasonic sensors to calculate distance by measuring sound wave travel time, translating physical distance into digital data.
-*<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-  
-  <img src="UltrasonicSensor1.jpg" style="width: 300px; height: auto;" alt="Ultrasonic Sensor View 1">
-  
-  <img src="UltrasonicSensor2.jpg" style="width: 300px; height: auto;" alt="Ultrasonic Sensor View 2">
-  
-  <video width="300" controls style="height: auto;">
-    <source src="UltrasonicSensor.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<p align="center">
+  <img src="ultrasonic1.jpg" width="45%" alt="Sensor Build Close-up">
+  <img src="ultrasonic2.jpg" width="45%" alt="Sensor in Action">
+</p>
 
-</div>
+### [Raspberry Pi Active Buzzer System]
+* **The Goal:** Create a programmable audible alert system.
+* **The Build:** Utilizing a Raspberry Pi to control an active buzzer via GPIO pins, demonstrating logic-based hardware triggers and circuit management.
+
+<p align="center">
+  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+</p>
 
 ### [Raspberry Pi Active Buzzer System]
 * **The Goal:** Create a programmable audible alert system.
