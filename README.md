@@ -20,25 +20,37 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ### [Raspberry Pi Ultrasonic Sensor Project]
 * **The Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
-* **The Build:** Integrated HC-SR04 ultrasonic sensors to calculate distance by measuring sound wave travel time, translating physical distance into digital data.
+* **Technical Specs:**
+    * **Hardware:** HC-SR04 Ultrasonic Sensor, 1kΩ and 2kΩ resistors (Voltage Divider for GPIO safety).
+    * **Logic:** Python-based script using the `RPi.GPIO` library to trigger 10µs sonic bursts.
+    * **Pins Used:** GPIO 23 (Trigger), GPIO 24 (Echo).
 <p align="center">
   <img src="ultrasonic1.jpg" width="45%" alt="Sensor Build Close-up">
   <img src="ultrasonic2.jpg" width="45%" alt="Sensor in Action">
 </p>
-
-### [Raspberry Pi Active Buzzer System]
-* **The Goal:** Create a programmable audible alert system.
-* **The Build:** Utilizing a Raspberry Pi to control an active buzzer via GPIO pins, demonstrating logic-based hardware triggers and circuit management.
-
 <p align="center">
-  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+  <video src="UltrasonicSensor.mp4" width="60%" controls>
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 ### [Raspberry Pi Active Buzzer System]
 * **The Goal:** Create a programmable audible alert system.
-* **The Build:** Utilizing a Raspberry Pi to control an active buzzer via GPIO pins, demonstrating logic-based hardware triggers and circuit management.
-
+* **Technical Specs:**
+    * **Hardware:** 5V Active Buzzer, PN2222 Transistor (for current amplification).
+    * **Logic:** Pulse Width Modulation (PWM) frequency control to manage alert tones.
+    * **Pins Used:** GPIO 18 (PWM Output).
+<p align="center">
+  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+</p>
+<p align="center">
+  <video src="buzzer_build.mp4" width="60%" controls>
+    Your browser does not support the video tag.
+  </video>
+</p>
 ---
+
+
 
 ### [Aerospace Welding Portfolio]
 * High-precision fabrication experience within the aerospace industry, focusing on metallurgy and structural integrity.
