@@ -25,11 +25,11 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
     * **Logic:** Python-based script using the `RPi.GPIO` library to trigger 10µs sonic bursts.
     * **Pins Used:** GPIO 23 (Trigger), GPIO 24 (Echo).
 <p align="center">
-  <img src="ultrasonic1.jpg" width="45%" alt="Sensor Build Close-up">
-  <img src="ultrasonic2.jpg" width="45%" alt="Sensor in Action">
+  <img src="UltrasonicSensor1.jpg" width="45%" alt="Sensor Build Close-up">
+  <img src="UltrasonicSensor2.jpg" width="45%" alt="Sensor in Action">
 </p>
 <p align="center">
-  <video src="UltrasonicSensor.mp4" width="60%" controls>
+  <video src="UltrasonicSensor.mp4" width="45%" controls>
     Your browser does not support the video tag.
   </video>
 </p>
@@ -41,10 +41,10 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
     * **Logic:** Pulse Width Modulation (PWM) frequency control to manage alert tones.
     * **Pins Used:** GPIO 18 (PWM Output).
 <p align="center">
-  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+  <img src="buzzer_build.jpg" width="45%" alt="Active Buzzer Circuit">
 </p>
 <p align="center">
-  <video src="buzzer_build.mp4" width="60%" controls>
+  <video src="buzzer_build.mp4" width="45%" controls>
     Your browser does not support the video tag.
   </video>
 </p>
