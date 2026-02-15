@@ -21,7 +21,11 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ### [Aerospace Welding Portfolio]
 * High-precision fabrication experience within the aerospace industry, focusing on metallurgy and structural integrity.
-<img src="AluWeld.jpg" alt="Aerospace Weld" width="400">
+<p align="center">
+  <img src="AluWeld.jpg" width="45%" />
+  <img src="20241213_092023.jpg" width="45%" />
+</p>
+
 ---
 
 ## 📬 Connect with Me
