@@ -5,14 +5,15 @@
 
 ### Bridging Precision Fabrication with Automated Systems
 I am a Robotics and Automated Manufacturing student at Lone Star College with a background in aerospace-grade welding. My work focuses on the intersection of physical builds and digital logic.
-
+**[A.A.S Degree Path](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm)
 ---
 
 ## 🛠️ Technical Skillset
-* **Manufacturing:** Aerospace Welding, Manual Machining, 3D Printing (Bambu Lab P2S)
-* **Electronics:** Raspberry Pi, Ultrasonic Sensors, MOSFET Circuits
-* **Robotics:** PLC Programming, Automated Manufacturing Systems
-* **Software:** CAD, Git/GitHub, Python
+* **Manufacturing:** Aluminum Mig Welding, Automated Machining, 3D Printing (Bambu Lab P2S), Industry 4.0
+* **Electronics:** Raspberry Pi, Micro Sensors/Actuators, AC/DC Circuits
+* **Robotics:** PLC Programming, Automated Manufacturing Systems, Hydraulics/Pnuematics, Universal Robots
+* **Software:** CAD, Git/GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Invoronment)
+ 
 
 ---
 
@@ -53,7 +54,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 
 ### [Aerospace Welding Portfolio]
-* High-precision fabrication experience within the aerospace industry, focusing on metallurgy and structural integrity.
+* High-precision fabrication experience within the Communications industry, focusing on metallurgy and structural integrity.
 <p align="center">
   <img src="AluWeld.jpg" width="45%" />
   <img src="20241213_092023.jpg" width="45%" />
@@ -63,5 +64,5 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ## 📬 Connect with Me
 * **Location:** Spring, Texas
-* **LinkedIn:** [www.linkedin.com/in/jeffery-baker-15b767218]
+* **LinkedIn:** [Jeffery Baker] (www.linkedin.com/in/jeffery-baker-15b767218)
 * **Email:** [Jlb107078@gmail.com]
