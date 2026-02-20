@@ -64,5 +64,5 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ## 📬 Connect with Me
 * **Location:** Spring, Texas
-* **LinkedIn:** (https://www.linkedin.com/in/jeffery-baker-15b767218/)
-* **Email:** [Jlb107078@gmail.com]
+* **LinkedIn:** [Jeffery Baker](https://www.linkedin.com/in/jeffery-baker-15b767218/)
+* **Email:** [Email](Jlb107078@gmail.com)
