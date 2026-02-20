@@ -12,7 +12,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 * **Manufacturing:** Aluminum Mig Welding, Automated Machining, 3D Printing (Bambu Lab P2S), Industry 4.0
 * **Electronics:** Raspberry Pi, Micro Sensors/Actuators, AC/DC Circuits
 * **Robotics:** PLC Programming, Automated Manufacturing Systems, Hydraulics/Pnuematics, Universal Robots
-* **Software:** CAD, Git/GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Invoronment)
+* **Software:** CAD, Git/GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Environment)
  
 
 ---
@@ -64,5 +64,5 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ## 📬 Connect with Me
 * **Location:** Spring, Texas
-* **LinkedIn:** (https://www.linkedin.com/in/jeffery-baker-15b767218)
+* **LinkedIn:** [Linkedin] (https://www.linkedin.com/in/jeffery-baker-15b767218)
 * **Email:** [Jlb107078@gmail.com]
