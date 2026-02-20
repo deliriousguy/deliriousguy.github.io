@@ -5,7 +5,7 @@
 
 ### Bridging Precision Fabrication with Automated Systems
 I am a Robotics and Automated Manufacturing student at Lone Star College with a background in aerospace-grade welding. My work focuses on the intersection of physical builds and digital logic.
-**[A.A.S Degree Path](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm)
+[A.A.S Degree Path](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm)
 ---
 
 ## 🛠️ Technical Skillset
@@ -64,5 +64,5 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ## 📬 Connect with Me
 * **Location:** Spring, Texas
-* **LinkedIn:** [Jeffery Baker] (www.linkedin.com/in/jeffery-baker-15b767218)
+* **LinkedIn:** (https://www.linkedin.com/in/jeffery-baker-15b767218)
 * **Email:** [Jlb107078@gmail.com]
