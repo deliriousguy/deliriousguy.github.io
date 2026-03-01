@@ -37,6 +37,31 @@
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
+
+  /* TERMINAL TYPING ANIMATION */
+.terminal-title {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #00d2ff; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00d2ff; }
+}
 </style>
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
@@ -59,7 +84,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ## 🚀 Featured Projects
 
-### [Raspberry Pi Ultrasonic Sensor Project]
+### <span class="terminal-title">[Raspberry Pi Ultrasonic Sensor Project]</span>
 * **The Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
 * **Technical Specs:**
     * **Hardware:** HC-SR04 Ultrasonic Sensor, 1kΩ and 2kΩ resistors (Voltage Divider for GPIO safety).
@@ -75,7 +100,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
   </video>
 </p>
 
-### [Raspberry Pi Active Buzzer System]
+### <span class="terminal-title">[Raspberry Pi Active Buzzer System]</span>
 * **The Goal:** Create a programmable audible alert system.
 * **Technical Specs:**
     * **Hardware:** 5V Active Buzzer, PN2222 Transistor (for current amplification).
