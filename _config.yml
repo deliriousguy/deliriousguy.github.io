@@ -1,2 +1,4 @@
-remote_theme: pages-themes/minimal@v0.2.0
+title: Jeffery Baker | Robotics
+description: Portfolio for Robotics and Automated Manufacturing.
+theme: jekyll-theme-minimal
 favicon: favicon.png
