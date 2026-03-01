@@ -62,6 +62,29 @@
   from, to { border-color: transparent }
   50% { border-color: #00d2ff; }
 }
+/* MOBILE RESPONSIVENESS FIXES */
+@media (max-width: 600px) {
+  /* 1. Reduces padding so the box has more room on small screens */
+  .wrapper {
+    padding: 20px !important;
+    margin: 10px auto !important;
+  }
+
+  /* 2. Shrinks the text and allows it to wrap so it stays inside the blue box */
+  .terminal-title {
+    font-size: 16px !important; 
+    white-space: normal !important; /* Allows text to wrap to the next line */
+    border-right: none !important;  /* Hides the blinking cursor on mobile to avoid layout bugs */
+    animation: none !important;     /* Disables the typing animation on mobile for better readability */
+    display: block !important;
+  }
+
+  /* 3. Ensures the images scale down properly */
+  img, video {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+}
 </style>
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
