@@ -1,51 +1,4 @@
-<style>
-  /* 1. THEME OVERRIDES: BACKGROUND & VISIBILITY */
-  html, body { 
-    background-image: url('tech-bg.jpg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-    background-color: #010b1a !important; 
-    color: #ffffff !important;
-  }
-
-  /* 2. HIDE THEME SIDEBAR, FOOTER, AND AUTO-HEADER */
-  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
-  h1:first-of-type { display: none !important; }
-
-  /* 3. CENTER CONTENT BOX */
-  .wrapper { 
-    max-width: 900px !important; 
-    margin: 40px auto !important; 
-    padding: 30px !important;
-    background: rgba(1, 11, 26, 0.85) !important; 
-    border: 1px solid #00d2ff !important; 
-    border-radius: 8px !important;
-    float: none !important;
-    display: block !important;
-  }
-  section { width: 100% !important; float: none !important; margin: 0 !important; }
-
-  /* 4. TERMINAL TYPING ANIMATION */
-  .terminal-title {
-    display: inline-block !important;
-    overflow: hidden; 
-    border-right: .15em solid #00d2ff; 
-    white-space: nowrap; 
-    color: #00d2ff !important;
-    font-family: 'Courier New', Courier, monospace !important;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end 5;
-  }
-
-  @keyframes typing { from { width: 0 } to { width: 100% } }
-  @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
-
-  /* 5. TEXT COLOR FIXES */
-  p, li, label, span, em, strong, td { color: #ffffff !important; }
-  h1, h2, h3, a { color: #00d2ff !important; }
-</style>
-
-<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=10">
+<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=11">
 
 <div class="wrapper">
 
@@ -68,24 +21,22 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 
 ### <span class="terminal-title">[Raspberry Pi Ultrasonic Sensor Project]</span>
 * **Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
-* **Specs:** HC-SR04 Sensor, 1kΩ and 2kΩ resistors (Voltage Divider), RPi.GPIO library.
 
 <p align="center">
-  <img src="ultrasonic1.jpg" width="45%" alt="Sensor Build">
-  <img src="ultrasonic2.jpg" width="45%" alt="Sensor in Action">
+  <img src="ultrasonic1.jpg" width="45%">
+  <img src="ultrasonic2.jpg" width="45%">
 </p>
 
 ### <span class="terminal-title">[Raspberry Pi Active Buzzer System]</span>
-* **Goal:** Create a programmable audible alert system with frequency control.
+* **Goal:** Create a programmable audible alert system.
 
 <p align="center">
-  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+  <img src="buzzer_build.jpg" width="60%">
 </p>
 
 ---
 
 ## 📫 Connect with Me
-* **Location:** Spring, Texas
 * **LinkedIn:** [Jeffery L Baker](https://www.linkedin.com/in/jeffery-baker-15b767218/)
 * **Email:** jlb107078@gmail.com
 * [📄 View & Download My Full Resume](resume.md)
