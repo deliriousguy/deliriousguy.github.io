@@ -100,8 +100,9 @@ This page documents my technical labs and circuit analysis work at the North Har
 ---
 
 ## 🤖 PLC & Automation Lab
-* **Focus:** Programmable Logic Controllers and Universal Robots integration.
+* **Focus:** Programmable Logic Controllers.
 * **Current Task:** Troubleshooting ladder logic for automated conveyor systems.
+* **Coming soon!**
 
 <p align="center">
   <video src="RoboticsLabVideo.mp4" width="80%" controls>
