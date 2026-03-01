@@ -1,4 +1,8 @@
-title: Jeffery Baker | Robotics
-description: Portfolio of a Robotics student with a background in aerospace welding.
+title: Jeffery Baker | Robotics & Manufacturing
+description: Portfolio for Robotics and Automated Manufacturing student.
 theme: jekyll-theme-minimal
 favicon: /favicon.png
+
+# This forces a technical grey background if the theme supports custom colors
+google_analytics: 
+  - background_color: "#f0f2f5"
