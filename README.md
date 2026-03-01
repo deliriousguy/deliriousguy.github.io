@@ -76,8 +76,8 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 ## 🛠️ Technical Skillset
 * **Manufacturing:** Aluminum Mig Welding, Automated Machining, 3D Printing (Bambu Lab P2S), Industry 4.0
 * **Electronics:** Raspberry Pi, Micro Sensors/Actuators, AC/DC Circuits
-* **Robotics:** PLC Programming, Automated Manufacturing Systems, Hydraulics/Pnuematics, Universal Robots
-* **Software:** CAD, Git/GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Environment)
+* **Robotics:** PLC Programming, Automated Manufacturing Systems, Electro-Hydraulics/Pnuematics, Universal Robots
+* **Software:** CAD, GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Environment)
  
 
 ---
