@@ -48,7 +48,7 @@
   letter-spacing: .10em; 
   animation: 
     typing 3.5s steps(40, end),
-    blink-caret .75s step-end 10;
+    blink-caret .75s step-end;
 }
 
 /* The typing effect */
