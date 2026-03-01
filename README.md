@@ -1,8 +1,11 @@
 <style>
   /* Sets a professional, subtle grey-to-white gradient background */
-  body { 
-    background: linear-gradient(180deg, #f0f2f5 0%, #ffffff 100%) !important;
+  html, body {
+    background-color: #f0f2f5 !Important;
+    background: linear-gradient(180deg, #d1d9e6 0%, #f0f2f5 100%) !important;
     background-attachment: fixed !important;
+      margin: 0 !important;
+      padding: 0 !Important
   }
   /* 1. Hides the sidebar and the "deliriousguy" header completely */
   header, .sidebar, #header, aside, footer { display: none !important; }
@@ -26,7 +29,7 @@
   /* 4. Final cleanup of the default title */
   h1:first-of-type { display: none !important; }
 </style>
-<link rel="icon" href="https://jlb-robotics.me/favicon.png?v=2">
+<link rel="icon" href="https://jlb-robotics.me/favicon.png?v=5">
 
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
