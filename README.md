@@ -1,37 +1,42 @@
 <style>
-  /* 1. APPLY THE TECH BACKGROUND */
+  /* 1. TECH BACKGROUND SETUP */
   html, body { 
     background-image: url('tech-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important;
-    background-color: #010b1a !important; /* Dark fallback color */
-    color: #e0e6ed !important; /* Light grey text for readability */
+    background-color: #010b1a !important; 
+    color: #ffffff !important; /* Forces primary text to white */
   }
 
-  /* 2. STYLE THE CONTENT BOX */
+  /* 2. SEMI-TRANSPARENT CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
     margin: 40px auto !important; 
     padding: 40px !important;
     float: none !important;
     display: block !important;
-    background: rgba(1, 11, 26, 0.85) !important; /* Semi-transparent dark blue */
-    border: 1px solid #00d2ff !important; /* Neon blue border */
+    background: rgba(1, 11, 26, 0.8) !important; /* Darker blue with transparency */
+    border: 1px solid #00d2ff !important; 
     border-radius: 8px !important;
-    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2) !important;
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. NEON HEADINGS & LINKS */
-  h1, h2, h3, a { color: #00d2ff !important; }
-  section { width: 100% !important; float: none !important; margin: 0 !important; }
+  /* 3. FIXING TEXT VISIBILITY (The Gray Words) */
+  p, li, label, span, em, strong { 
+    color: #ffffff !important; /* Changes all body/gray text to crisp white */
+  }
   
-  /* 4. HIDE SIDEBAR & DEFAULT FOOTER */
+  /* NEON BLUE ACCENTS FOR HEADINGS & LINKS */
+  h1, h2, h3, a { 
+    color: #00d2ff !important; 
+    text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
+  }
+
+  /* 4. LAYOUT CLEANUP */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
-
-  /* 5. FIX TEXT COLORS FOR DARK MODE */
-  li, p, label { color: #ffffff !important; }
+  section { width: 100% !important; float: none !important; margin: 0 !important; }
 </style>
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
