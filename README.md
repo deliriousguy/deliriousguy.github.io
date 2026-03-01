@@ -89,8 +89,12 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-# Jeffery Baker | Robotics & Advanced Manufacturing
+<p align="center">
+  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
+  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a>
+</p>
 
+# Jeffery Baker | Robotics & Advanced Manufacturing
 ### Bridging Precision Fabrication with Automated Systems
 I am a Robotics and Automated Manufacturing student at Lone Star College with a background in aerospace-grade welding. My work focuses on the intersection of physical builds and digital logic.
 [A.A.S Degree Path](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm)
@@ -165,4 +169,3 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
   
   <button type="submit" style="background-color: #333; color: white; padding: 10px 20px; border: none; margin-top: 10px; cursor: pointer;">Send Message</button>
 </form>
-</div>
