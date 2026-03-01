@@ -1,6 +1,6 @@
 <style>
   /* 1. Hides the sidebar and the "deliriousguy" header completely */
-  header, .sidebar, #header, aside { display: none !important; }
+  header, .sidebar, #header, aside, footer { display: none !important; }
 
   /* 2. Forces the main container to take up the full width and center itself */
   .wrapper { 
