@@ -1,35 +1,40 @@
 <style>
-  /* Sets a professional, subtle grey-to-white gradient background */
-  html, body {
-    background-color: #f0f2f5 !Important;
-    background: linear-gradient(180deg, #d1d9e6 0%, #f0f2f5 100%) !important;
+  /* 1. APPLY THE TECH BACKGROUND */
+  html, body { 
+    background-image: url('tech-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
     background-attachment: fixed !important;
-      margin: 0 !important;
-      padding: 0 !Important
+    background-color: #010b1a !important; /* Dark fallback color */
+    color: #e0e6ed !important; /* Light grey text for readability */
   }
-  /* 1. Hides the sidebar and the "deliriousguy" header completely */
-  header, .sidebar, #header, aside, footer { display: none !important; }
 
-  /* 2. Forces the main container to take up the full width and center itself */
+  /* 2. STYLE THE CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
-    margin: 0 auto !important; 
-    padding: 20px !important;
+    margin: 40px auto !important; 
+    padding: 40px !important;
     float: none !important;
     display: block !important;
+    background: rgba(1, 11, 26, 0.85) !important; /* Semi-transparent dark blue */
+    border: 1px solid #00d2ff !important; /* Neon blue border */
+    border-radius: 8px !important;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2) !important;
   }
 
-  /* 3. Ensures the content section doesn't stay shifted to the right */
-  section { 
-    width: 100% !important; 
-    float: none !important; 
-    margin: 0 !important; 
-  }
-
-  /* 4. Final cleanup of the default title */
+  /* 3. NEON HEADINGS & LINKS */
+  h1, h2, h3, a { color: #00d2ff !important; }
+  section { width: 100% !important; float: none !important; margin: 0 !important; }
+  
+  /* 4. HIDE SIDEBAR & DEFAULT FOOTER */
+  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
+
+  /* 5. FIX TEXT COLORS FOR DARK MODE */
+  li, p, label { color: #ffffff !important; }
 </style>
-<link rel="icon" href="https://jlb-robotics.me/favicon.png?v=5">
+
+<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
