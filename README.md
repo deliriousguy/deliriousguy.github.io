@@ -1,4 +1,9 @@
 <style>
+
+<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=7">
+
+<div class="wrapper">
+  <h1><span class="terminal-title">Jeffery Baker | Robotics & Manufacturing</span></h1>
   /* 1. TECH BACKGROUND SETUP */
   html, body { 
     background-image: url('tech-bg.jpg') !important;
@@ -40,7 +45,8 @@
 
 /* TERMINAL TYPING ANIMATION */
 .terminal-title {
-  display: inline-block;
+  display: inline-block; !Important;
+  visibility: visible !Important:
   overflow: hidden; 
   border-right: .15em solid #00d2ff; 
   white-space: nowrap; 
@@ -48,6 +54,7 @@
   letter-spacing: .10em;
   color: #00d2ff !important;
   font-family: 'Courier New', Courier, monospace !important;
+    font-size: 28px !Important;
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end 5; /* This '5' ensures it stops right after your name */
@@ -68,7 +75,7 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-# <span class="terminal-title">Jeffery Baker | Robotics & Advanced Manufacturing</span>
+<h1 align="center"><span class="terminal-title">Jeffery Baker | Robotics & Manufacturing</span></h1>
 
 ### Bridging Precision Fabrication with Automated Systems
 I am a Robotics and Automated Manufacturing student at Lone Star College with a background in aerospace-grade welding. My work focuses on the intersection of physical builds and digital logic.
