@@ -95,7 +95,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 * **Email:** [Jlb107078@gmail.com](Jlb107078@gmail.com)
 * [📄 View & Download My Full Resume](resume.md)
 * ### ✉️ Send Me a Message
-<form action="(https://formspree.io/f/mpqjeoyw)" method="POST" style="max-width: 500px;">
+<form action="https://formspree.io/f/mpqjeoyw" method="POST" style="max-width: 500px;">
   <label>Your Email:</label><br>
   <input type="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;" required><br>
   
