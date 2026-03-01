@@ -1,6 +1,29 @@
 <style>
-  h1:first-of-type { display: none; }
+  /* 1. Hides the sidebar and the "deliriousguy" header completely */
+  header, .sidebar, #header, aside { display: none !important; }
+
+  /* 2. Forces the main container to take up the full width and center itself */
+  .wrapper { 
+    max-width: 900px !important; 
+    margin: 0 auto !important; 
+    padding: 20px !important;
+    float: none !important;
+    display: block !important;
+  }
+
+  /* 3. Ensures the content section doesn't stay shifted to the right */
+  section { 
+    width: 100% !important; 
+    float: none !important; 
+    margin: 0 !important; 
+  }
+
+  /* 4. Final cleanup of the default title */
+  h1:first-of-type { display: none !important; }
 </style>
+
+<link rel="shortcut icon" type="image/png" href="https://jlb-robotics.me/favicon.png">
+
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
 ### Bridging Precision Fabrication with Automated Systems
