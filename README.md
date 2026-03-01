@@ -1,7 +1,7 @@
 <style>
   h1:first-of-type { display: none; }
-  <link rel="icon" type="image/png" href="favicon.png">
 </style>
+  <link rel="icon" type="image/png" href="favicon.png">
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
 ### Bridging Precision Fabrication with Automated Systems
