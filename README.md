@@ -1,4 +1,9 @@
 <style>
+  /* Sets a professional, subtle grey-to-white gradient background */
+  body { 
+    background: linear-gradient(180deg, #f0f2f5 0%, #ffffff 100%) !important;
+    background-attachment: fixed !important;
+  }
   /* 1. Hides the sidebar and the "deliriousguy" header completely */
   header, .sidebar, #header, aside, footer { display: none !important; }
 
@@ -21,8 +26,7 @@
   /* 4. Final cleanup of the default title */
   h1:first-of-type { display: none !important; }
 </style>
-
-<link rel="shortcut icon" type="image/png" href="https://jlb-robotics.me/favicon.png">
+<link rel="icon" href="https://jlb-robotics.me/favicon.png?v=2">
 
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
@@ -90,3 +94,13 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 * **LinkedIn:** [Jeffery L Baker](https://www.linkedin.com/in/jeffery-baker-15b767218/)
 * **Email:** [Jlb107078@gmail.com](Jlb107078@gmail.com)
 * [📄 View & Download My Full Resume](resume.md)
+* ### ✉️ Send Me a Message
+<form action="(https://formspree.io/f/mpqjeoyw)" method="POST" style="max-width: 500px;">
+  <label>Your Email:</label><br>
+  <input type="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;" required><br>
+  
+  <label>Your Message:</label><br>
+  <textarea name="message" style="width: 100%; height: 100px; padding: 8px;" required></textarea><br>
+  
+  <button type="submit" style="background-color: #333; color: white; padding: 10px 20px; border: none; margin-top: 10px; cursor: pointer;">Send Message</button>
+</form>
