@@ -89,13 +89,6 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<div class="wrapper">
-
-<p align="center">
-  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a>
-</p>
-
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
 ### Bridging Precision Fabrication with Automated Systems
