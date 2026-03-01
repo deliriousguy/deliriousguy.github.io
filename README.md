@@ -1,7 +1,14 @@
-<link rel="icon" type="image/png" href="favicon.png">
 <style>
-  h1:first-of-type { display: none; }
+  /* Hides the site title and the "View on GitHub" sidebar link */
+  header, .sidebar, #header { display: none !important; }
+  
+  /* Centers your content on the page */
+  .container { max-width: 900px !important; margin: 0 auto !important; float: none !important; }
+  
+  /* Hides the default h1 that themes often force */
+  h1:first-of-type { display: none !important; }
 </style>
+
 # Jeffery Baker | Robotics & Advanced Manufacturing
 
 ### Bridging Precision Fabrication with Automated Systems
