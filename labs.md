@@ -93,7 +93,8 @@ This page documents my technical labs and circuit analysis work at the North Har
 * **Focus:** Measuring voltage drops and verifying Ohm's Law in complex resistor networks.
 
 <p align="center">
-  <img src="CircuitLabPhoto.jpg" width="80%" alt="Breadboard Analysis">
+  <img src="ACDC_Lab_1.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
+  <img src="ACDC_Lab_2.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
 </p>
 
 ---
