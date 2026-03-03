@@ -86,7 +86,7 @@ This section contains documented technical results from my circuit analysis and 
 
 ---
 
-## 🤖 PLC & Automation Lab
+## 🤖 PLC & Automation Lab (Coming Soon)
 * **Focus:** Programming logic for automated manufacturing systems and Universal Robots (UR) integration.
 * **Current Task:** Troubleshooting ladder logic for synchronized industrial arm movements.
 
