@@ -91,7 +91,8 @@
 
 <p align="center">
   <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a>
+  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
+  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
 </p>
 
 ## Jeffery Baker | Robotics & Automated Manufacturing
@@ -104,7 +105,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 ## 🛠️ Technical Skillset
 * **Manufacturing:** Aluminum Mig Welding, Automated Machining, 3D Printing (Bambu Lab P2S), Industry 4.0
 * **Electronics:** Raspberry Pi, Micro Sensors/Actuators, AC/DC Circuits
-* **Robotics:** PLC Programming, Automated Manufacturing Systems, Electro-Hydraulics/Pnuematics, Universal Robots
+* **Robotics:** PLC Programming, Automated Manufacturing Systems, Electro-Hydraulics/Pneumatics, Universal Robots, Fanuc, Festo
 * **Software:** CAD, GitHub, Python3, Bumbu/Creality/Cura Object Slicers, SolidWorks, VSCode/IDE's (Integrated Development Environment)
  
 
