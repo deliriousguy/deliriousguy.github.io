@@ -77,7 +77,10 @@
 ### Industrial Maintenance & Infrastructure
 * **General Technician I (TxDOT):** Responsible for technical maintenance and operational support for state-level infrastructure.
 * **Floor Staff (Inspire Rock):** Managing facility operations and safety in a high-activity technical environment.
-
+<div style="text-align: center; margin-top: 40px;">
+  <p>Scan to view my portfolio on mobile</p>
+  <img src="jlb_portfolio_qr.png" width="180" style="border: 2px solid #00d2ff; border-radius: 8px;">
+</div>
 ---
 
 <p align="center">
