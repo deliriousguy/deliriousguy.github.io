@@ -63,7 +63,7 @@
 # <span class="terminal-title">Jeffery Baker | Robotics & Automated Manufacturing</span>
 
 ### ⚡ The Bridge Between Precision & Automation
-I am a specialized technician transitioning from **aerospace-grade welding** into **Automated Manufacturing Systems**. My unique value is the ability to combine heavy industrial fabrication with modern digital logic and PLC programming.
+I am a specialized technician transitioning from **aerospace-grade welding** into **Robotics/Automated Manufacturing Systems**. My unique value is the ability to combine heavy industrial fabrication with modern digital logic and PLC programming.
 
 ---
 
@@ -71,14 +71,15 @@ I am a specialized technician transitioning from **aerospace-grade welding** int
 * **Automation:** PLC Programming (Fanuc, Festo), UR Integration, Industry 4.0.
 * **Electronics:** Circuit Analysis, Raspberry Pi (Python3), Micro-Sensor logic.
 * **Fabrication:** Aluminum MIG Welding, Automated Machining.
-* **Systems:** Electro-Hydraulics & Pneumatics, CAD/SolidWorks.
+* **Systems:** Electro-Hydraulics & Pneumatics, 3D Printing(Bambu Labs P2S), Bambu/Creality/Cura Slicers,
+*  CAD/SolidWorks, Github, VSCode/IDE's(Integrated Developer Environment).
 
 ---
 
 ## 🚀 Recent Highlights
 * **Current Project:** Developing a smart LED light bar with AI integration.
-* **Latest Lab:** Real-time distance monitoring system using Raspberry Pi Zero 2 W.
-* **Credentials:** Pursuing A.A.S. at Lone Star College (Expected Graduation: Dec 2026).
+* **Latest Personal Project:** Real-time distance monitoring system using Raspberry Pi Zero 2 W.
+* **Credentials:** Pursuing my [A.A.S.](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm) at Lone Star College (Expected Graduation: Dec 2026).
 
 ---
 
@@ -88,7 +89,7 @@ I am a specialized technician transitioning from **aerospace-grade welding** int
 * **Location:** Spring, Texas
 
 <form action="https://formspree.io/f/mpqjeoyw" method="POST" style="max-width: 500px;">
-  <label>Send a Quick Command:</label><br>
+  <label>Send a Quick Message:</label><br>
   <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 8px; margin-bottom: 10px;" required><br>
   <textarea name="message" placeholder="Your Message" style="width: 100%; height: 80px; padding: 8px;" required></textarea><br>
   <button type="submit" style="background-color: #00d2ff; color: #010b1a; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold;">SEND MESSAGE</button>
