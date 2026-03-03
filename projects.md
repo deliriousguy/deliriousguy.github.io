@@ -9,7 +9,7 @@
     color: #ffffff !important;
   }
 
-  /* 2. CONTENT BOX (This creates the dark blue area) */
+  /* 2. SEMI-TRANSPARENT CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
     margin: 40px auto !important; 
@@ -26,23 +26,25 @@
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
-  /* 4. HIDE THEME SIDEBARS (Fixes the white space on the left) */
+  /* 4. LAYOUT CLEANUP (Hides the 'deliriousguy' sidebar) */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
+  h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-  /* TERMINAL ANIMATION */
+  /* TERMINAL TYPING ANIMATION */
   .terminal-title {
     display: inline-block;
     overflow: hidden; 
     border-right: .15em solid #00d2ff; 
     white-space: nowrap; 
+    margin: 0 auto; 
     letter-spacing: .10em; 
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
   }
   @keyframes typing { from { width: 0 } to { width: 100% } }
   @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
 
-  /* MOBILE RESPONSIVENESS */
+  /* MOBILE RESPONSIVENESS FIXES */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
@@ -60,6 +62,8 @@
   <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
 </p>
 
+<div class="wrapper">
+
 # <span class="terminal-title">Robotics & Programming Projects</span>
 
 ## 🚀 Raspberry Pi Ultrasonic Sensor Project
@@ -68,11 +72,11 @@
     * **Hardware:** HC-SR04 Ultrasonic Sensor, 1kΩ and 2kΩ resistors (Voltage Divider).
     * **Logic:** Python-based script using `RPi.GPIO` library.
 <p align="center">
-  <img src="UltrasonicSensor1.jpg" width="45%" alt="Sensor Build">
-  <img src="UltrasonicSensor2.jpg" width="45%" alt="Sensor in Action">
+  <img src="UltrasonicSensor1.jpg" width="45%" alt="Sensor Build" style="border: 1px solid #00d2ff; border-radius: 4px;">
+  <img src="UltrasonicSensor2.jpg" width="45%" alt="Sensor in Action" style="border: 1px solid #00d2ff; border-radius: 4px;">
 </p>
 <p align="center">
-  <video src="UltrasonicSensor.mp4" width="60%" controls></video>
+  <video src="UltrasonicSensor.mp4" width="70%" style="border: 1px solid #00d2ff; border-radius: 4px;" controls></video>
 </p>
 
 ---
@@ -80,11 +84,20 @@
 ## 🚀 Raspberry Pi Active Buzzer System
 * **The Goal:** Create a programmable audible alert system.
 * **Technical Specs:**
-    * **Hardware:** 5V Active Buzzer, PN2222 Transistor.
+    * **Hardware:** 5V Active Buzzer, PN2222 Transistor (for current amplification).
     * **Logic:** Pulse Width Modulation (PWM) frequency control.
-<p align="Left">
-  <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
+
+<p align="center">
+  <img src="buzzer_build.jpg" width="48%" alt="Active Buzzer Circuit" style="border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;">
+  <video src="buzzer_build.mp4" width="48%" style="max-height: 280px; border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;" controls>
+    Your browser does not support the video tag.
+  </video>
 </p>
-<p align="Right">
-  <video src="buzzer_build.mp4" width="60%"  hight="80%" controls></video>
+
+---
+
+<p align="center">
+  <a href="index.html" style="font-weight:bold;"> << Back to Main Portfolio</a>
 </p>
+
+</div>
