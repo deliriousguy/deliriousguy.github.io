@@ -1,6 +1,6 @@
 # My Professional Resume
 
-[Click here to download the PDF version](Jeffery-Baker-Resume.pdf)
+[Click here to download the PDF version](JEFFERYBAKER_Resume.pdf)
 
 ---
 
