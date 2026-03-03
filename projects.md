@@ -82,9 +82,9 @@
 * **Technical Specs:**
     * **Hardware:** 5V Active Buzzer, PN2222 Transistor.
     * **Logic:** Pulse Width Modulation (PWM) frequency control.
-<p align="center">
+<p align="Left">
   <img src="buzzer_build.jpg" width="60%" alt="Active Buzzer Circuit">
 </p>
-<p align="center">
-  <video src="buzzer_build.mp4" width="60%" controls></video>
+<p align="Right">
+  <video src="buzzer_build.mp4" width="60%"  hight="80%" controls></video>
 </p>
