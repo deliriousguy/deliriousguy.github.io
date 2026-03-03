@@ -82,16 +82,12 @@
 ---
 
 ## 🚀 Raspberry Pi Active Buzzer System
-* **The Goal:** Create a programmable audible alert system.
-* **Technical Specs:**
-    * **Hardware:** 5V Active Buzzer, PN2222 Transistor (for current amplification).
-    * **Logic:** Pulse Width Modulation (PWM) frequency control.
+* **Goal:** Create a programmable audible alert system.
+* **Specs:** 5V Active Buzzer, PN2222 Transistor, PWM frequency control.
 
 <p align="center">
-  <img src="buzzer_build.jpg" width="48%" alt="Active Buzzer Circuit" style="border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;">
-  <video src="buzzer_build.mp4" width="48%" style="max-height: 280px; border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;" controls>
-    Your browser does not support the video tag.
-  </video>
+  <img src="buzzer_build.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;">
+  <video src="buzzer_build.mp4" width="48%" style="max-height: 240px; border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;" controls></video>
 </p>
 
 ---
