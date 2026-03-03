@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <embed src="Jeffery-Baker-Resume.pdf" width="800px" height="1100px" type="application/pdf">
+  <embed src="JEFFERYBAKER_Resume.pdf" width="800px" height="1100px" type="application/pdf">
 </p>
 
 ---
