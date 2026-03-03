@@ -159,7 +159,7 @@ I am a Robotics and Automated Manufacturing student at Lone Star College with a 
 * **Location:** Spring, Texas
 * **LinkedIn:** [Jeffery L Baker](https://www.linkedin.com/in/jeffery-baker-15b767218/)
 * **Email:** [Jlb107078@gmail.com](Jlb107078@gmail.com)
-* [📄 View & Download My Full Resume](resume.md)
+* [📄 View & Download My Full Resume](JEFFERYBAKER_RESUME.pdf)
 * ### ✉️ Send Me a Message
 <form action="https://formspree.io/f/mpqjeoyw" method="POST" style="max-width: 500px;">
   <label>Your Email:</label><br>
