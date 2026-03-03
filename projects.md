@@ -59,15 +59,6 @@
   <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
   <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
 </p>
-</style>
-
-<p align="center">
-  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="projects.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ PROJECTS ]</a> &nbsp;&nbsp; 
-  <a href="experience.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ EXPERIENCE ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
-  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
-</p>
 
 # <span class="terminal-title">Robotics & Programming Projects</span>
 
