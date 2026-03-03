@@ -62,7 +62,6 @@
   <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
 </p>
 
-<div class="wrapper">
 
 # <span class="terminal-title">Robotics & Programming Projects</span>
 
@@ -95,5 +94,3 @@
 <p align="center">
   <a href="index.html" style="font-weight:bold;"> << Back to Main Portfolio</a>
 </p>
-
-</div>
