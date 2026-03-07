@@ -32,10 +32,24 @@
     text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
   }
 
-  /* 4. LAYOUT CLEANUP (Hides the 'deliriousguy' sidebar) */
+  /* 4. LAYOUT CLEANUP */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
+
+  /* NAVIGATION STYLING */
+  .nav-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav-container a {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
 
   /* TERMINAL TYPING ANIMATION */
   .terminal-title {
@@ -53,6 +67,7 @@
   /* MOBILE RESPONSIVENESS FIXES */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
+    .nav-container a { font-size: 14px; padding: 5px; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
@@ -60,18 +75,19 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<p align="center">
-  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="projects.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ PROJECTS ]</a> &nbsp;&nbsp; 
-  <a href="experience.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ EXPERIENCE ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
-  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
-</p>
+<div class="nav-container">
+  <a href="index.md">[ HOME ]</a>
+  <a href="projects.md">[ PROJECTS ]</a>
+  <a href="experience.md">[ EXPERIENCE ]</a>
+  <a href="labs.md">[ COLLEGE LABS ]</a>
+  <a href="JEFFERYBAKER_Resume.pdf" target="_blank">[ RESUME ]</a>
+</div>
 
 # <span class="terminal-title">Lone Star College | Robotics Lab Media</span>
 
 ### Current Coursework: Robotics & Automated Manufacturing
 This section contains documented technical results from my circuit analysis and robotics labs at the North Harris campus.
+
 <p>Find more videos on my YouTube channel 
   <a href="https://www.youtube.com/@JlbRobotics" target="_blank">@Jeffery's Knowledge</a>
 </p>
@@ -98,7 +114,6 @@ This section contains documented technical results from my circuit analysis and 
     Your browser does not support the video tag.
   </video>
 </p>
-
 ---
 
 <p align="center">
