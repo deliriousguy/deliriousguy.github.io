@@ -37,18 +37,27 @@
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-  /* NAVIGATION STYLING */
+/* NEW FLEXBOX NAVIGATION - Stops the bracket break */
   .nav-container {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
   }
+  
   .nav-container a {
-    display: inline-block;
-    white-space: nowrap;
+    white-space: nowrap; /* Forces [ COLLEGE LABS ] to stay together */
     font-weight: bold;
     color: #00d2ff !important;
     text-decoration: none;
-    padding: 5px 10px;
+    font-family: monospace;
+  }
+
+  @media (max-width: 600px) {
+    .nav-container a {
+      font-size: 13px; /* Smaller text ensures 3-4 tabs fit per row */
+    }
   }
 
   /* TERMINAL TYPING ANIMATION */
@@ -76,10 +85,10 @@
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
 <div class="nav-container">
-  <a href="index.md">[ HOME ]</a>
-  <a href="projects.md">[ PROJECTS ]</a>
-  <a href="experience.md">[ EXPERIENCE ]</a>
-  <a href="labs.md">[ COLLEGE LABS ]</a>
+  <a href="./">[ HOME ]</a>
+  <a href="projects">[ PROJECTS ]</a>
+  <a href="experience">[ EXPERIENCE ]</a>
+  <a href="labs">[ COLLEGE LABS ]</a>
   <a href="JEFFERYBAKER_Resume.pdf" target="_blank">[ RESUME ]</a>
 </div>
 
