@@ -72,7 +72,7 @@
 
 ### Current Coursework: Robotics & Automated Manufacturing
 This section contains documented technical results from my circuit analysis and robotics labs at the North Harris campus.
-* Find more videos on my youtube channel @<a href="[https://www.youtube.com/@JlbRobotics]">[Jeffery's Knowledge]</a>
+* Find more videos on my youtube channel @<a href="(https://www.youtube.com/@JlbRobotics)">[Jeffery's Knowledge]</a>
 
 ---
 
