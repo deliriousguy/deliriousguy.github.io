@@ -9,75 +9,57 @@
     color: #ffffff !important;
   }
 
-  /* 2. CONTENT BOX (This creates the dark blue area) */
+  /* 2. CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
     margin: 40px auto !important; 
     padding: 40px !important;
-    float: none !important;
-    display: block !important;
     background: rgba(1, 11, 26, 0.85) !important; 
     border: 1px solid #00d2ff !important; 
     border-radius: 8px !important;
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. TEXT VISIBILITY */
-  p, li, label, span, em, strong { color: #ffffff !important; }
-  h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
-
-  /* 4. NAVIGATION STYLING (NEW) */
+  /* 3. NAVIGATION - THE "NO-BREAK" FIX */
   .nav-container {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 30px;
+    text-align: center;
   }
   .nav-link {
     font-weight: bold;
-    color: #00d2ff !important; /* Keep your neon blue */
+    color: #00d2ff !important;
     text-decoration: none !important;
-    display: inline-block;
-    padding: 10px 15px;
-    white-space: nowrap; /* Forces brackets to stay with the text */
+    white-space: nowrap; /* Stops brackets from jumping lines */
+    padding: 5px 10px;
+    font-family: monospace;
   }
 
-  /* 5. HIDE THEME SIDEBARS */
+  /* 4. TEXT VISIBILITY */
+  p, li, label, span, em, strong { color: #ffffff !important; }
+  h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+
+  /* 5. HIDE THEME ELEMENTS */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
+  h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
-
-  /* TERMINAL ANIMATION */
-  .terminal-title {
-    display: inline-block;
-    overflow: hidden; 
-    border-right: .15em solid #00d2ff; 
-    white-space: nowrap; 
-    letter-spacing: .10em; 
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  }
-  @keyframes typing { from { width: 0 } to { width: 100% } }
-  @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
 
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    
-    /* Responsive Navigation Fix */
-    .nav-link {
-      font-size: 13px !important;
-      padding: 8px 5px !important;
-    }
-
-    .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
-    img, video { width: 100% !important; margin-bottom: 15px !important; }
+    .nav-link { font-size: 13px !important; padding: 5px !important; }
+    img, video { width: 100% !important; }
   }
 </style>
 
-<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
-
 <div class="nav-container">
-  <a href="index.md" class="nav-link">[ HOME ]</a> 
-  <a href="projects.md" class="nav-link">[ PROJECTS ]</a> 
-  <a href="experience.md" class="nav-link">[ EXPERIENCE ]</a> 
-  <a href="labs.md" class="nav-link">[ COLLEGE LABS ]</a> 
+  <a href="./" class="nav-link">[ HOME ]</a> 
+  <a href="projects" class="nav-link">[ PROJECTS ]</a> 
+  <a href="experience" class="nav-link">[ EXPERIENCE ]</a> 
+  <a href="labs" class="nav-link">[ COLLEGE LABS ]</a> 
   <a href="JEFFERYBAKER_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
 </div>
 # <span class="terminal-title">Jeffery Baker | Robotics & Automated Manufacturing</span>
