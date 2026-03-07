@@ -126,5 +126,5 @@ This section contains documented technical results from my circuit analysis and 
 ---
 
 <p align="center">
-  <a href="index.html" style="font-weight:bold;"> << Back to Main Portfolio</a>
-</p>
+  <a href="./" style="font-weight:bold;"> << Back to Main Portfolio</a>
+</p>>
