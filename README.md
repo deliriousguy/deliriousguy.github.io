@@ -26,7 +26,21 @@
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
-  /* 4. HIDE THEME SIDEBARS (Fixes the white space on the left) */
+  /* 4. NAVIGATION STYLING (NEW) */
+  .nav-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .nav-link {
+    font-weight: bold;
+    color: #00d2ff !important; /* Keep your neon blue */
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 10px 15px;
+    white-space: nowrap; /* Forces brackets to stay with the text */
+  }
+
+  /* 5. HIDE THEME SIDEBARS */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
@@ -45,6 +59,13 @@
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
+    
+    /* Responsive Navigation Fix */
+    .nav-link {
+      font-size: 13px !important;
+      padding: 8px 5px !important;
+    }
+
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
@@ -52,14 +73,13 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<p align="center">
-  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="projects.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ PROJECTS ]</a> &nbsp;&nbsp; 
-  <a href="experience.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ EXPERIENCE ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
-  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
-</p>
-
+<div class="nav-container">
+  <a href="index.md" class="nav-link">[ HOME ]</a> 
+  <a href="projects.md" class="nav-link">[ PROJECTS ]</a> 
+  <a href="experience.md" class="nav-link">[ EXPERIENCE ]</a> 
+  <a href="labs.md" class="nav-link">[ COLLEGE LABS ]</a> 
+  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+</div>
 # <span class="terminal-title">Jeffery Baker | Robotics & Automated Manufacturing</span>
 
 ### ⚡ The Bridge Between Precision & Automation
