@@ -79,7 +79,7 @@ I am a specialized technician transitioning from **aerospace-grade welding** int
 ---
 
 ## 🚀 Recent Highlights
-* **Current Project:** Developing a smart LED light bar with AI integration.
+* **Current Project:** Creating a custom ESP32 blue tooth speaker.
 * **Latest Personal Project:** Real-time distance monitoring system using Raspberry Pi Zero 2 W.
 * **Credentials:** Pursuing my [A.A.S.](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm) at Lone Star College (Expected Graduation: Dec 2026).
 
