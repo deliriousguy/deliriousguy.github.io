@@ -89,7 +89,7 @@
   <a href="projects">[ PROJECTS ]</a>
   <a href="experience">[ EXPERIENCE ]</a>
   <a href="labs">[ COLLEGE LABS ]</a>
-  <a href="JEFFERYBAKER_Resume.pdf" target="_blank">[ RESUME ]</a>
+  <a href="/JEFFERYBAKER_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
 </div>
 
 # <span class="terminal-title">Lone Star College | Robotics Lab Media</span>
