@@ -14,83 +14,98 @@
     max-width: 900px !important; 
     margin: 40px auto !important; 
     padding: 40px !important;
-    float: none !important;
-    display: block !important;
     background: rgba(1, 11, 26, 0.85) !important; 
     border: 1px solid #00d2ff !important; 
     border-radius: 8px !important;
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. TEXT VISIBILITY */
+  /* 3. NAVIGATION - CALIBRATED SIZE & NO-WRAP */
+  .nav-container {
+    display: flex;
+    flex-wrap: nowrap; /* Forces a single line on desktop */
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none !important;
+    white-space: nowrap; /* Prevents brackets from breaking */
+    padding: 8px 12px; 
+    font-family: monospace;
+    font-size: 17px; /* Calibrated to fit 5 tabs in 900px */
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border: 1px solid #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+    border-radius: 4px;
+  }
+
+  /* 4. TEXT VISIBILITY */
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
-  /* 4. LAYOUT CLEANUP (Hides the 'deliriousguy' sidebar) */
+  /* 5. LAYOUT CLEANUP */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-  /* TERMINAL TYPING ANIMATION */
-  .terminal-title {
-    display: inline-block;
-    overflow: hidden; 
-    border-right: .15em solid #00d2ff; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .10em; 
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  }
-  @keyframes typing { from { width: 0 } to { width: 100% } }
-  @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
-
-  /* MOBILE RESPONSIVENESS FIXES */
+  /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
-    .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
-    img, video { width: 100% !important; margin-bottom: 15px !important; }
+    .wrapper { padding: 20px !important; }
+    .nav-container { 
+      flex-wrap: wrap; /* Allows tabs to stack on small phone screens */
+      gap: 8px; 
+    }
+    .nav-link { 
+      font-size: 13px !important; 
+      padding: 5px !important; 
+    }
+    img, video { width: 100% !important; }
   }
 </style>
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<p align="center">
-  <a href="index.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ HOME ]</a> &nbsp;&nbsp; 
-  <a href="projects.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ PROJECTS ]</a> &nbsp;&nbsp; 
-  <a href="experience.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ EXPERIENCE ]</a> &nbsp;&nbsp; 
-  <a href="labs.html" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ COLLEGE LABS ]</a> &nbsp;&nbsp;
-  <a href="JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold; color:#00d2ff; text-decoration:none;">[ RESUME ]</a>
-</p>
+<div class="nav-container">
+  <a href="./" class="nav-link">[ HOME ]</a>
+  <a href="projects" class="nav-link">[ PROJECTS ]</a>
+  <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
+  <a href="labs" class="nav-link">[ COLLEGE LABS ]</a>
+  <a href="/JEFFERYBAKER_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+</div>
 
+# 🚀 Engineering & Automation Projects
 
-# <span class="terminal-title">Robotics & Programming Projects</span>
-
-## 🚀 Raspberry Pi Ultrasonic Sensor Project
-* **The Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
+## 🛰️ Raspberry Pi Ultrasonic Sensor Project
+* **Goal:** Develop a real-time distance monitoring system using a Raspberry Pi Zero 2 W.
 * **Technical Specs:**
-    * **Hardware:** HC-SR04 Ultrasonic Sensor, 1kΩ and 2kΩ resistors (Voltage Divider).
+    * **Hardware:** HC-SR04 Ultrasonic Sensor, $1k\Omega$ and $2k\Omega$ resistors (Voltage Divider).
     * **Logic:** Python-based script using `RPi.GPIO` library.
+
 <p align="center">
-  <img src="UltrasonicSensor1.jpg" width="45%" alt="Sensor Build" style="border: 1px solid #00d2ff; border-radius: 4px;">
-  <img src="UltrasonicSensor2.jpg" width="45%" alt="Sensor in Action" style="border: 1px solid #00d2ff; border-radius: 4px;">
-</p>
-<p align="center">
-  <video src="UltrasonicSensor.mp4" width="70%" style="border: 1px solid #00d2ff; border-radius: 4px;" controls></video>
+  <img src="UltrasonicSensor1.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
+  <img src="UltrasonicSensor2.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
 </p>
 
 ---
 
-## 🚀 Raspberry Pi Active Buzzer System
-* **Goal:** Create a programmable audible alert system.
-* **Specs:** Raspberry Pi Zero 2 W, GPIO Pins, 5V Active Buzzer, PWM frequency control.
+## 🔊 Custom ESP32 Bluetooth Speaker
+* **Development:** Designed a custom enclosure in SolidWorks and integrated soldered circuitry for high-fidelity audio output.
 
 <p align="center">
-  <img src="buzzer_build.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;">
-  <video src="buzzer_build.mp4" width="48%" style="max-height: 240px; border: 1px solid #00d2ff; border-radius: 4px; vertical-align: middle;" controls></video>
+  <img src="buzzer_build.jpg" width="80%" style="border: 1px solid #00d2ff; border-radius: 4px; margin-bottom: 20px;">
 </p>
 
 ---
 
 <p align="center">
-  <a href="index.html" style="font-weight:bold;"> << Back to Main Portfolio</a>
+  <a href="./" style="font-weight:bold;"> << Back to Main Portfolio</a>
 </p>
