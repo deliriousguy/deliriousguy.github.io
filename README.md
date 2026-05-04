@@ -36,7 +36,7 @@
     white-space: nowrap;
     padding: 12px 20px; /* More space inside the brackets */
     font-family: monospace;
-    font-size: 20px; /* Increased from 16px */
+    font-size: 15px; /* Increased from 16px */
     border: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease; /* Smooth hover effect */
