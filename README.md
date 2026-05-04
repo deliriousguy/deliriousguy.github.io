@@ -70,7 +70,7 @@
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .nav-link { font-size: 13px !important; padding: 5px !important; }
+    .nav-link { font-size: 15px !important; padding: 5px !important; }
     img, video { width: 100% !important; }
   }
 </style>
