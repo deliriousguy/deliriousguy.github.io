@@ -34,7 +34,7 @@
   /* 5. BIGGER NAVIGATION SETUP */
   .nav-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 20px; /* Increased spacing */
     margin-bottom: 40px;
