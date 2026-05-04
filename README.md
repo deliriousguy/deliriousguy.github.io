@@ -36,7 +36,7 @@
     white-space: nowrap; /* Keeps [ COLLEGE LABS ] together */
     padding: 8px 12px;
     font-family: monospace;
-    font-size: 17px; /* Calibrated size to fit all 5 tabs */
+    font-size: 11px; /* Calibrated size to fit all 5 tabs */
     transition: all 0.3s ease;
   }
 
