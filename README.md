@@ -20,24 +20,44 @@
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. NAVIGATION - THE "NO-BREAK" FIX */
+/* 3. NAVIGATION - BIGGER & CLEANER */
   .nav-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-    text-align: center;
+    gap: 20px; /* Increased gap for larger tabs */
+    margin-bottom: 40px;
   }
+
   .nav-link {
     font-weight: bold;
     color: #00d2ff !important;
     text-decoration: none !important;
-    white-space: nowrap; /* Stops brackets from jumping lines */
-    padding: 5px 10px;
+    white-space: nowrap;
+    padding: 12px 20px; /* More space inside the brackets */
     font-family: monospace;
+    font-size: 20px; /* Increased from 16px */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth hover effect */
   }
 
+  /* Glow effect when you hover over them */
+  .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+  }
+
+  /* MOBILE RESPONSIVENESS - Adjusted for bigger base size */
+  @media (max-width: 600px) {
+    .wrapper { padding: 20px !important; }
+    .nav-link { 
+      font-size: 15px !important; /* Bigger on mobile than before */
+      padding: 8px 10px !important; 
+    }
+    .nav-container { gap: 8px; }
+  }
   /* 4. TEXT VISIBILITY */
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
