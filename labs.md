@@ -23,41 +23,41 @@
   }
 
   /* 3. FIXING TEXT VISIBILITY */
-  p, li, label, span, em, strong { 
-    color: #ffffff !important; 
-  }
-  
-  h1, h2, h3, a { 
-    color: #00d2ff !important; 
-    text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
-  }
+  p, li, label, span, em, strong { color: #ffffff !important; }
+  h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
   /* 4. LAYOUT CLEANUP */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-/* NEW FLEXBOX NAVIGATION - Stops the bracket break */
+  /* 5. BIGGER NAVIGATION SETUP */
   .nav-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap: 20px; /* Increased spacing */
+    margin-bottom: 40px;
   }
   
-  .nav-container a {
-    white-space: nowrap; /* Forces [ COLLEGE LABS ] to stay together */
+  .nav-link {
+    white-space: nowrap; /* Forces brackets to stay with the text */
     font-weight: bold;
     color: #00d2ff !important;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: monospace;
+    font-size: 20px; /* Bigger text */
+    padding: 12px 20px; /* Bigger clickable area */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
   }
 
-  @media (max-width: 600px) {
-    .nav-container a {
-      font-size: 13px; /* Smaller text ensures 3-4 tabs fit per row */
-    }
+  /* Glow effect on hover */
+  .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
   }
 
   /* TERMINAL TYPING ANIMATION */
@@ -76,7 +76,8 @@
   /* MOBILE RESPONSIVENESS FIXES */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .nav-container a { font-size: 14px; padding: 5px; }
+    .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
+    .nav-container { gap: 8px; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
@@ -85,11 +86,11 @@
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
 <div class="nav-container">
-  <a href="./">[ HOME ]</a>
-  <a href="projects">[ PROJECTS ]</a>
-  <a href="experience">[ EXPERIENCE ]</a>
-  <a href="labs">[ COLLEGE LABS ]</a>
-  <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+  <a href="./" class="nav-link">[ HOME ]</a>
+  <a href="projects" class="nav-link">[ PROJECTS ]</a>
+  <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
+  <a href="labs" class="nav-link">[ COLLEGE LABS ]</a>
+  <a href="/JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
 </div>
 
 # <span class="terminal-title">Lone Star College | Robotics Lab Media</span>
@@ -127,4 +128,4 @@ This section contains documented technical results from my circuit analysis and 
 
 <p align="center">
   <a href="./" style="font-weight:bold;"> << Back to Main Portfolio</a>
-</p>>
+</p>
