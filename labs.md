@@ -46,7 +46,7 @@
     color: #00d2ff !important;
     text-decoration: none !important;
     font-family: monospace;
-    font-size: 20px; /* Bigger text */
+    font-size: 15px; /* Bigger text */
     padding: 12px 20px; /* Bigger clickable area */
     border: 1px solid transparent;
     border-radius: 4px;
