@@ -83,7 +83,15 @@
       font-size: 13px !important; 
       padding: 5px !important; 
     }
-    img, video { width: 100% !important; }
+    /* Allow images to stack on mobile devices natively */
+    .image-row {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .image-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
   }
 </style>
 
@@ -112,10 +120,10 @@
     </li>
   </ul>
 
-  <p align="center">
-    <img src="UltrasonicSensor1.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
-    <img src="UltrasonicSensor2.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
-  </p>
+  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
+    <img src="UltrasonicSensor1.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="UltrasonicSensor2.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+  </div>
 
   <hr>
 
@@ -124,10 +132,10 @@
     <li><strong>Development:</strong> Designed a custom enclosure in SolidWorks and integrated soldered circuitry for high-fidelity audio output.</li>
   </ul>
 
-  <p align="center">
-    <img src="InsideESP32Speaker.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
-    <img src="ESP32Speaker_On3DPrinter.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
-  </p>
+  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
+    <img src="InsideESP32Speaker.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+  </div>
 
   <hr>
 
