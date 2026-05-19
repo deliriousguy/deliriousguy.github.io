@@ -85,21 +85,21 @@
 # <span class="terminal-title">Jeffery Baker | Robotics & Automated Manufacturing</span>
 
 ### ⚡ The Bridge Between Precision & Automation
-I am a specialized technician transitioning from **aerospace-grade welding** into **Robotics/Automated Manufacturing Systems**. My unique value is the ability to combine heavy industrial fabrication with modern digital logic and PLC programming.
-
+As a dedicated A.A.S. Robotics and Automated Manufacturing student graduating in December 2026, I bridge the gap between hands-on electro-mechanical hardware and smart automation. My technical training includes practical experience with industrial robots, cobots, PLC programming, industrial motor controls, sensor circuit integration, industrial welding, and SolidWorks design. I am currently seeking high-impact roles in Robotics Maintenance, Automation, Systems Integration, or Sensor Maintenance, where I can immediately deploy my troubleshooting skills to optimize operations and drive industrial efficiency.
 ---
 
 ## 🛠️ Core Competencies
-* **Automation:** PLC Programming (Fanuc, Festo), UR Integration, Industry 4.0.
-* **Electronics:** Circuit Analysis, Raspberry Pi (Python3), Micro-Sensor logic.
+* **Automation:** PLC Programming (Rockwell), Universal Robots, Fanuc Robots, Industry 4.0.
+* **Electronics:** Circuit Analysis, Sensors.
 * **Fabrication:** Aluminum MIG Welding, Automated Machining.
 * **Systems:** Electro-Hydraulics & Pneumatics, 3D Printing(Bambu Labs P2S), Bambu/Creality/Cura Slicers,
 *  CAD/SolidWorks, Github, VSCode/IDE's(Integrated Developer Environment).
+*  Proactive problem solver/Analytical troubleshooter
 
 ---
 
 ## 🚀 Recent Highlights
-* **Current Project:** Creating a custom ESP32 blue tooth speaker.
+* **Current Project:** Creating a custom ESP32 bluetooth speaker. (Completed)
 * **Latest Personal Project:** Real-time distance monitoring system using Raspberry Pi Zero 2 W.
 * **Credentials:** Pursuing my [A.A.S.](https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm) at Lone Star College (Expected Graduation: Dec 2026).
 
