@@ -1,4 +1,5 @@
 <style>
+  <link rel="icon" type="image/png" href="favicon.png">
   /* 1. TECH BACKGROUND SETUP */
   html, body { 
     background-image: url('tech-bg.jpg') !important;
