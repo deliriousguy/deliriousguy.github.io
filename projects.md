@@ -125,7 +125,8 @@
   </ul>
 
   <p align="center">
-    <img src="buzzer_build.jpg" width="80%" style="border: 1px solid #00d2ff; border-radius: 4px; margin-bottom: 20px;">
+    <img src="InsideESP32Speaker.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
+    <img src="ESP32Speaker_On3DPrinter.jpg" width="48%" style="border: 1px solid #00d2ff; border-radius: 4px; margin: 1%;">
   </p>
 
   <hr>
