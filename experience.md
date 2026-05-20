@@ -105,8 +105,6 @@
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<div class="wrapper">
-
   <div class="nav-container">
     <a href="./" class="nav-link">[ HOME ]</a>
     <a href="projects" class="nav-link">[ PROJECTS ]</a>
@@ -114,7 +112,9 @@
     <a href="videos" class="nav-link">[ VIDEOS ]</a>
     <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
-
+  
+<div class="wrapper">
+  
   <h1><span class="terminal-title">Professional Experience</span></h1>
 
   <h3>Aerospace-Grade Fabrication</h3>
