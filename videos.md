@@ -66,14 +66,48 @@
   p { line-height: 1.6; margin-bottom: 20px; }
   hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
-  .terminal-title {
-    display: inline-block;
-    animation: pulseGlow 2s infinite alternate;
+  /* 6. INTERACTIVE YOUTUBE LINK BUTTON */
+  .youtube-container {
+    text-align: center;
+    margin-bottom: 40px;
   }
 
+  .youtube-link {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none !important;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  /* Glow effect on hover for YouTube Link Button */
+  .youtube-link:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+  }
+
+/* TERMINAL TYPING ANIMATION */
+  .terminal-title {
+    display: inline-block;
+    overflow: hidden; 
+    border-right: .15em solid #00d2ff; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .10em; 
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
   @keyframes pulseGlow {
     0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
+  @keyframes typing { from { width: 0 } to { width: 100% } }
+  @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
   }
 
   /* 5. MATCHING DARK INPUT FIELDS */
