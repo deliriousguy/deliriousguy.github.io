@@ -11,107 +11,196 @@ layout: null
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
 
   <style>
-    /* 1. TECH BACKGROUND SETUP */
-    html, body { 
-      background-image: url('tech-bg.jpg') !important;
-      background-size: cover !important;
-      background-position: center !important;
-      background-attachment: fixed !important;
-      background-color: #010b1a !important; 
-      color: #ffffff !important;
-    }
+  /* 1. TECH BACKGROUND SETUP */
+  html, body { 
+    background-image: url('tech-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-color: #010b1a !important; 
+    color: #ffffff !important;
+  }
 
-    /* 2. CONTENT BOX */
-    .wrapper { 
-      max-width: 900px !important; 
-      margin: 40px auto !important; 
-      padding: 40px !important;
-      background: rgba(1, 11, 26, 0.85) !important; 
-      border: 1px solid #00d2ff !important; 
-      border-radius: 8px !important;
-      box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
-    }
+  /* 2. CONTENT BOX */
+  .wrapper { 
+    max-width: 900px !important; 
+    margin: 40px auto !important; 
+    padding: 40px !important;
+    background: rgba(1, 11, 26, 0.85) !important; 
+    border: 1px solid #00d2ff !important; 
+    border-radius: 8px !important;
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
+  }
 
-    /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
-    .nav-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 35px;
-    }
+  /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+  }
 
-    .nav-link {
-      font-weight: bold;
-      color: #00d2ff !important;
-      text-decoration: none !important;
-      white-space: nowrap;
-      padding: 12px 20px;
-      font-family: monospace;
-      font-size: 15px;
-      border: 1px solid transparent !important; 
-      border-radius: 4px !important;
-      transition: all 0.3s ease;
-    }
+  .nav-link {
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    padding: 12px 20px;
+    font-family: monospace;
+    font-size: 15px;
+    border: 1px solid transparent !important; 
+    border-radius: 4px !important;
+    transition: all 0.3s ease;
+  }
 
-    .nav-link:hover {
-      background: rgba(0, 210, 255, 0.1) !important;
-      border-color: #00d2ff !important; 
-      box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
-    }
+  .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1) !important;
+    border-color: #00d2ff !important; 
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
+  }
 
-    /* 4. TEXT VISIBILITY & ANIMATION */
-    p, li, label, span, em, strong { color: #ffffff !important; }
-    h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+  /* 4. TEXT VISIBILITY & ANIMATION */
+  p, li, label, span, em, strong { color: #ffffff !important; }
+  h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
-    /* 5.1 PERMANENT ACTIVE TAB GLOW */
-    .nav-link.active {
-      background: rgba(0, 210, 255, 0.15) !important;
-      border-color: #00d2ff !important;
-      box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-      border-radius: 4px !important;
-    }
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px !important;
+  }
+  
+  ul { margin-bottom: 20px; padding-left: 20px; }
+  li { margin-bottom: 8px; line-height: 1.5; }
+  p { line-height: 1.6; margin-bottom: 20px; }
+  hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
+
+  .terminal-title {
+    display: inline-block;
+    animation: pulseGlow 2s infinite alternate;
+  }
+
+  @keyframes pulseGlow {
+    0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+    100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
+  }
+
+  /* 5. MATCHING DARK INPUT FIELDS */
+  input, textarea {
+    background: rgba(1, 11, 26, 0.6) !important;
+    border: 1px solid #00d2ff !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  /* 6. HIDE THEME ELEMENTS */
+  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
+  h1:first-of-type { display: none !important; }
+  section { width: 100% !important; float: none !important; margin: 0 !important; }
+
+  /* 7. STANDARD DOUBLE IMAGE ROWS (Projects & Experience Desktop Settings) */
+  .image-row img {
+    width: 48%;
+    max-width: 48%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #00d2ff;
+  }
+
+  /* 8. ALIGNED MEDIA ROW BOX DESIGN & DARK BACKGROUND FIX (Videos Desktop Settings) */
+  .media-aligned-row img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
+    object-fit: contain !important; 
+    background-color: #010b1a !important; 
+    border: 1px solid #00d2ff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
+  }
+  .media-aligned-row a {
+    display: block;
+    width: 100%;
+  }
+
+  /* ANIMATED VIDEO CARD FEATURE PROPERTIES */
+  .animated-video-card {
+    display: block;
+    position: relative;
+    text-decoration: none !important;
+    border: 1px solid #00d2ff !important;
+    border-radius: 4px;
+    animation: neonBorderPulse 2s infinite alternate ease-in-out;
+  }
+  .animated-video-card img { border: none !important; box-shadow: none !important; }
+
+  .border-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #010b1a;
+    color: #00d2ff !important;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    letter-spacing: 0.12em;
+    z-index: 5;
+    white-space: nowrap;
+    border: 1px solid #00d2ff;
+    border-radius: 3px;
+    animation: labelGlowPulse 1.5s infinite alternate ease-in-out;
+  }
+  .label-top { top: -11px; }
+  .label-bottom { bottom: -11px; }
+
+  @keyframes neonBorderPulse {
+    0% { border-color: rgba(0, 210, 255, 0.4) !important; box-shadow: 0 0 6px rgba(0, 210, 255, 0.2); }
+    100% { border-color: rgba(0, 210, 255, 1) !important; box-shadow: 0 0 18px rgba(0, 210, 255, 0.6); }
+  }
+  @keyframes labelGlowPulse {
+    0% { text-shadow: 0 0 2px rgba(0, 210, 255, 0.3); box-shadow: 0 0 4px rgba(0, 210, 255, 0.1); }
+    100% { text-shadow: 0 0 8px rgba(0, 210, 255, 0.8); box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); }
+  }
+
+  /* 📱 UNIVERSAL MOBILE MEDIA QUERY */
+  @media (max-width: 600px) {
+    /* Tighten content box space so it feels native on small displays */
+    .wrapper { padding: 20px !important; margin: 10px auto !important; }
     
-    ul { margin-bottom: 20px; padding-left: 20px; }
-    li { margin-bottom: 8px; line-height: 1.5; }
-    p { line-height: 1.6; margin-bottom: 20px; }
-    hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
+    /* Optimized layout scaling for navigation tabs */
+    .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
+    .nav-container { gap: 6px; }
 
-    .terminal-title {
-      display: inline-block;
-      animation: pulseGlow 2s infinite alternate;
+    /* Force row structural containers to pivot vertically */
+    .image-row, .media-aligned-row {
+      flex-direction: column !important;
+      gap: 15px !important;
     }
 
-    @keyframes pulseGlow {
-      0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
-      100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
+    /* Unshackle the standard double images to use full smartphone screen width */
+    .image-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important;
     }
 
-    /* 5. MATCHING DARK INPUT FIELDS */
-    input, textarea {
-      background: rgba(1, 11, 26, 0.6) !important;
-      border: 1px solid #00d2ff !important;
-      color: #ffffff !important;
-      border-radius: 4px;
-      font-family: monospace;
+    /* Unshackle video gallery layouts */
+    .media-aligned-row img, .media-aligned-row a {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important; 
     }
-    input::placeholder, textarea::placeholder {
-      color: rgba(255, 255, 255, 0.4) !important;
-    }
-
-    /* 6. HIDE THEME ELEMENTS */
-    header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
-    h1:first-of-type { display: none !important; }
-    section { width: 100% !important; float: none !important; margin: 0 !important; }
-
-    /* MOBILE RESPONSIVENESS */
-    @media (max-width: 600px) {
-      .wrapper { padding: 20px !important; margin: 10px auto !important; }
-      .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
-      .nav-container { gap: 8px; }
-      img, video { width: 100% !important; }
-    }
-  </style>
+    .border-label { font-size: 9px !important; }
+  }
+</style>
 </head>
 <body>
 
