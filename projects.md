@@ -83,7 +83,6 @@
       font-size: 13px !important; 
       padding: 5px !important; 
     }
-    /* Allow images to stack on mobile devices natively */
     .image-row {
       flex-direction: column !important;
       gap: 15px !important;
@@ -91,7 +90,7 @@
     .image-row img {
       width: 100% !important;
       max-width: 100% !important;
-      aspect-ratio: auto !important; /* Unlocks ratio on mobile for full view */
+      aspect-ratio: auto !important; 
     }
   }
 </style>
@@ -132,6 +131,33 @@
   <ul>
     <li><strong>Development:</strong> Designed a custom enclosure in SolidWorks and integrated soldered circuitry for high-fidelity audio output.</li>
   </ul>
+
+  <div style="margin: 20px 0 30px 20px; font-family: monospace;">
+    <h4 style="color: #00d2ff; margin-bottom: 10px;">📋 Bill of Materials & Technical Layout:</h4>
+    
+    <p style="margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Core Electronics & Audio</p>
+    <ul>
+      <li><strong>Microcontroller:</strong> Elegoo ESP32 (CP2102).</li>
+      <li><strong>Digital-to-Analog Converter (DAC):</strong> PCM5102 I2S IIS DAC.</li>
+      <li><strong>Amplifier:</strong> PAM8610 2x15W Class D Power Amplifier Board with Control Knob.</li>
+      <li><strong>Speakers:</strong> Dual 4-Ohm 20W Full-Range Speakers.</li>
+    </ul>
+
+    <p style="margin-top: 15px; margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Power & Control System</p>
+    <ul>
+      <li><strong>Main Power Source:</strong> 12.6V 3A max 2600mAh Li-ion Battery (Rapthor brand).</li>
+      <li><strong>Voltage Step-Down:</strong> LM2596 Buck Converter (drops battery voltage to 5V to safely power the ESP32 and DAC).</li>
+      <li><strong>Power Switch:</strong> 12V 20A Round Blue LED Toggle Switch.</li>
+      <li><strong>System Monitor:</strong> Battery Monitor / Capacity Indicator.</li>
+    </ul>
+
+    <p style="margin-top: 15px; margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Wiring, Hardware & Enclosure</p>
+    <ul>
+      <li><strong>Electrical Wire:</strong> 16 Gauge Solid Core Wire.</li>
+      <li><strong>Audio Patching:</strong> 3.5mm Aux Cable.</li>
+      <li><strong>Outer Shell:</strong> Custom 3D-Printed Enclosure (designed in SolidWorks over 2 days and printed on my Bambu Lab P1S over 3 days).</li>
+    </ul>
+  </div>
 
   <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
     <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
