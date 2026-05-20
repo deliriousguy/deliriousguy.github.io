@@ -9,191 +9,96 @@
     color: #ffffff !important;
   }
 
-  /* 2. SEMI-TRANSPARENT CONTENT BOX */
+  /* 2. CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
     margin: 40px auto !important; 
     padding: 40px !important;
-    float: none !important;
-    display: block !important;
     background: rgba(1, 11, 26, 0.85) !important; 
     border: 1px solid #00d2ff !important; 
     border-radius: 8px !important;
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. FIXING TEXT VISIBILITY */
+  /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    padding: 12px 20px;
+    font-family: monospace;
+    font-size: 15px;
+    border: 1px solid transparent !important; /* Force transparent bounding box */
+    border-radius: 4px !important;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1) !important;
+    border-color: #00d2ff !important; /* Force cyan box line on hover */
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
+  }
+
+  /* 4. TEXT VISIBILITY & ANIMATION */
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px !important;
+  }
+  
+  /* Give the lists some clean spacing */
   ul { margin-bottom: 20px; padding-left: 20px; }
   li { margin-bottom: 8px; line-height: 1.5; }
   p { line-height: 1.6; margin-bottom: 20px; }
   hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
-  /* 4. LAYOUT CLEANUP - AGGRESSIVELY HIDING DEFAULT THEME INJECTIONS */
-  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
+  .terminal-title {
+    display: inline-block;
+    animation: pulseGlow 2s infinite alternate;
+  }
+
+  @keyframes pulseGlow {
+    0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+    100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
+  }
+
+  /* 5. MATCHING DARK INPUT FIELDS */
+  input, textarea {
+    background: rgba(1, 11, 26, 0.6) !important;
+    border: 1px solid #00d2ff !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  /* 6. HIDE THEME ELEMENTS */
+  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-  /* 5.1 PERMANENT ACTIVE TAB GLOW */
-  .nav-link.active {
-    background: rgba(0, 210, 255, 0.15) !important;
-    border: 1px solid #00d2ff !important; /* Force permanent border highlight */
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px !important;
-  }
-
-  /* 6. NAVIGATION SETUP WITH BORDER FORCES */
-  .nav-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 12px; 
-    margin-bottom: 35px;
-  }
-  
-  .nav-link {
-    white-space: nowrap; 
-    font-weight: bold;
-    color: #00d2ff !important;
-    text-decoration: none !important;
-    font-family: monospace;
-    font-size: 15px; 
-    padding: 12px 20px; 
-    border: 1px solid transparent !important; /* Force transparent layout bounding box */
-    border-radius: 4px !important;
-    transition: all 0.3s ease;
-  }
-
-  /* Glow effect on hover for Navigation Links */
-  .nav-link:hover {
-    background: rgba(0, 210, 255, 0.1) !important;
-    border: 1px solid #00d2ff !important; /* Force bounding border on hover */
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-  }
-
-  /* 6. INTERACTIVE YOUTUBE LINK BUTTON */
-  .youtube-container {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .youtube-link {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: bold;
-    color: #00d2ff !important;
-    text-decoration: none !important;
-    font-family: monospace;
-    font-size: 15px;
-    padding: 12px 24px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
-
-  /* Glow effect on hover for YouTube Link Button */
-  .youtube-link:hover {
-    background: rgba(0, 210, 255, 0.1);
-    border-color: #00d2ff;
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
-  }
-
-  /* TERMINAL TYPING ANIMATION */
-  .terminal-title {
-    display: inline-block;
-    overflow: hidden; 
-    border-right: .15em solid #00d2ff; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .10em; 
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  }
-  @keyframes typing { from { width: 0 } to { width: 100% } }
-  @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
-
-  /* 7. IMAGE ROW LAYOUT & INTERNAL BACKGROUND FIX */
-  .media-aligned-row img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 4/3 !important;
-    object-fit: contain !important; 
-    background-color: #010b1a !important; 
-    border: 1px solid #00d2ff;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
-  }
-  .media-aligned-row a {
-    display: block;
-    width: 100%;
-  }
-
-  /* 8. ANIMATED YOUTUBE CARD WITH BORDER TEXT LABELS */
-  .animated-video-card {
-    display: block;
-    position: relative;
-    width: 100%;
-    text-decoration: none !important;
-    border-radius: 4px;
-    overflow: visible; 
-  }
-
-  .animated-video-card img {
-    border: 2px solid #00d2ff !important; 
-    animation: neonPulse 2s infinite alternate !important;
-    transition: transform 0.3s ease;
-  }
-
-  .animated-video-card:hover img {
-    transform: scale(1.02); 
-  }
-
-  .border-label {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #010b1a; 
-    padding: 0 6px;
-    font-family: monospace;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    z-index: 10;
-    white-space: nowrap;
-    animation: labelColorPulse 2s infinite alternate;
-  }
-
-  .label-top { top: -9px; }
-  .label-bottom { bottom: -9px; }
-
-  @keyframes neonPulse {
-    0% { border-color: #00d2ff !important; box-shadow: 0 0 8px rgba(0, 210, 255, 0.4); }
-    100% { border-color: #ff0055 !important; box-shadow: 0 0 18px rgba(255, 0, 85, 0.7); }
-  }
-
-  @keyframes labelColorPulse {
-    0% { color: #00d2ff !important; text-shadow: 0 0 4px rgba(0, 210, 255, 0.6); }
-    100% { color: #ff0055 !important; text-shadow: 0 0 4px rgba(255, 0, 85, 0.6); }
-  }
-
-  /* MOBILE RESPONSIVENESS FIXES */
+  /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .nav-link, .youtube-link { font-size: 14px !important; padding: 8px 10px !important; white-space: normal !important; }
-    .nav-container { gap: 8px; flex-wrap: wrap; }
-    .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
-    
-    .media-aligned-row {
-      flex-direction: column !important;
-      gap: 15px !important;
-    }
-    .media-aligned-row img, .media-aligned-row a {
-      width: 100% !important;
-      max-width: 100% !important;
-      aspect-ratio: auto !important; 
-    }
-    img, video { width: 100% !important; margin-bottom: 15px !important; }
+    .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
+    .nav-container { gap: 8px; }
+    img, video { width: 100% !important; }
   }
 </style>
 
