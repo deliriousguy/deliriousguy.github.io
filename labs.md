@@ -31,7 +31,7 @@
   p { line-height: 1.6; margin-bottom: 20px; }
   hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
-  /* 4. LAYOUT CLEANUP - AGGRESSIVELY HIDING THEME THEME INJECTIONS */
+  /* 4. LAYOUT CLEANUP - AGGRESSIVELY HIDING DEFAULT THEME INJECTIONS */
   header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
@@ -105,6 +105,21 @@
   @keyframes typing { from { width: 0 } to { width: 100% } }
   @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
 
+  /* New General Class for Media Row (Binary row layouts still use .image-row) */
+  .media-aligned-row img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
+    object-fit: contain !important; /* Changed from cover to ensure full image visibility */
+    border: 1px solid #00d2ff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; /* Subtle shadow for all */
+  }
+  .media-aligned-row a {
+    display: block;
+    width: 100%;
+  }
+
   /* MOBILE RESPONSIVENESS FIXES */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
@@ -119,7 +134,7 @@
     .media-aligned-row img, .media-aligned-row a {
       width: 100% !important;
       max-width: 100% !important;
-      aspect-ratio: auto !important; /* Restores natural ratios on mobile screens */
+      aspect-ratio: auto !important; /* Resets aspect ratio on mobile screens to stack naturally */
     }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
@@ -148,6 +163,10 @@
   <h3>🎬 Episode 1: Introduction to Industrial Robotics & Cobots</h3>
   <p>Welcome to my technical video series, <strong>Robotic Fundamentals</strong>. This series focuses on deep-dive demonstrations where I explain how to configure, program, and execute operations on collaborative robots (cobots) like the Universal Robots UR3e, alongside heavy-duty industrial platforms like Fanuc systems.</p>
 
+  <p style="font-family: monospace;">Find more videos on my YouTube channel: 
+    <a href="https://www.youtube.com/@JlbRobotics" target="_blank" style="text-decoration: none;">@Jeffery's Knowledge</a>
+  </p>
+
   <hr>
 
   <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);">🛠️ Core Learning Objectives & Instrumentation</span></h3>
@@ -157,17 +176,17 @@
   <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
     
     <div style="flex: 1; min-width: 0;">
-      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" style="display: block; width: 100%;">
-        <img src="ThumbnailYT1 .jpg" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);" alt="Watch Robotic Fundamentals Ep.1">
+      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank">
+        <img src="ThumbnailYT1 .jpg" alt="Watch Robotic Fundamentals Ep.1">
       </a>
     </div>
 
     <div style="flex: 1; min-width: 0;">
-      <img src="TeachPendant.jpg" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Industrial Robot Teach Pendant Unit">
+      <img src="TeachPendant.jpg" alt="Industrial Robot Teach Pendant Unit">
     </div>
 
     <div style="flex: 1; min-width: 0;">
-      <img src="WhatYouWillLearnRFE1.png" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Curriculum Scope: What You Will Learn">
+      <img src="WhatYouWillLearnRFE1.png" alt="Curriculum Scope: What You Will Learn">
     </div>
 
   </div>
