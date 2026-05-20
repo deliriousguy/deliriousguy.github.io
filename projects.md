@@ -137,25 +137,25 @@
     
     <p style="margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Core Electronics & Audio</p>
     <ul>
-      <li><strong>Microcontroller:</strong> Elegoo ESP32 (CP2102).</li>
-      <li><strong>Digital-to-Analog Converter (DAC):</strong> PCM5102 I2S IIS DAC.</li>
-      <li><strong>Amplifier:</strong> PAM8610 2x15W Class D Power Amplifier Board with Control Knob.</li>
-      <li><strong>Speakers:</strong> Dual 4-Ohm 20W Full-Range Speakers.</li>
+      <li>Microcontroller: Elegoo ESP32 (CP2102).</li>
+      <li>Digital-to-Analog Converter (DAC): PCM5102 I2S IIS DAC.</li>
+      <li>Amplifier: PAM8610 2x15W Class D Power Amplifier Board with Control Knob.</li>
+      <li>Speakers: Dual 4-Ohm 20W Full-Range Speakers.</li>
     </ul>
 
     <p style="margin-top: 15px; margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Power & Control System</p>
     <ul>
-      <li><strong>Main Power Source:</strong> 12.6V 3A max 2600mAh Li-ion Battery (Rapthor brand).</li>
-      <li><strong>Voltage Step-Down:</strong> LM2596 Buck Converter (drops battery voltage to 5V to safely power the ESP32 and DAC).</li>
-      <li><strong>Power Switch:</strong> 12V 20A Round Blue LED Toggle Switch.</li>
-      <li><strong>System Monitor:</strong> Battery Monitor / Capacity Indicator.</li>
+      <li>Main Power Source: 12.6V 3A max 2600mAh Li-ion Battery (Rapthor brand).</li>
+      <li>Voltage Step-Down: LM2596 Buck Converter (drops battery voltage to 5V to safely power the ESP32 and DAC).</li>
+      <li>Power Switch: 12V 20A Round Blue LED Toggle Switch.</li>
+      <li>System Monitor: Battery Monitor / Capacity Indicator.</li>
     </ul>
 
     <p style="margin-top: 15px; margin-bottom: 5px; font-weight: bold; color: #00d2ff;">🔹 Wiring, Hardware & Enclosure</p>
     <ul>
-      <li><strong>Electrical Wire:</strong> 16 Gauge Solid Core Wire.</li>
-      <li><strong>Audio Patching:</strong> 3.5mm Aux Cable.</li>
-      <li><strong>Outer Shell:</strong> Custom 3D-Printed Enclosure (designed in SolidWorks over 2 days and printed on my Bambu Lab P1S over 3 days).</li>
+      <li>Electrical Wire: 16 Gauge Solid Core Wire.</li>
+      <li>Audio Patching: 3.5mm Aux Cable.</li>
+      <li>Outer Shell: Custom 3D-Printed Enclosure (designed in SolidWorks over 2 days and printed on my Bambu Lab P1S over 3 days).</li>
     </ul>
   </div>
 
