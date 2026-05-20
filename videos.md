@@ -37,14 +37,14 @@
     padding: 12px 20px;
     font-family: monospace;
     font-size: 15px;
-    border: 1px solid transparent !important; /* Force transparent bounding box */
+    border: 1px solid transparent !important; 
     border-radius: 4px !important;
     transition: all 0.3s ease;
   }
 
   .nav-link:hover {
     background: rgba(0, 210, 255, 0.1) !important;
-    border-color: #00d2ff !important; /* Force cyan box line on hover */
+    border-color: #00d2ff !important; 
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
   }
 
@@ -60,7 +60,6 @@
     border-radius: 4px !important;
   }
   
-  /* Give the lists some clean spacing */
   ul { margin-bottom: 20px; padding-left: 20px; }
   li { margin-bottom: 8px; line-height: 1.5; }
   p { line-height: 1.6; margin-bottom: 20px; }
@@ -86,7 +85,6 @@
     transition: all 0.3s ease;
   }
 
-  /* Glow effect on hover for YouTube Link Button */
   .youtube-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
@@ -133,7 +131,7 @@
     height: auto !important;
     aspect-ratio: 4/3 !important;
     object-fit: contain !important; 
-    background-color: #010b1a !important; /* Forces the internal white borders to turn black */
+    background-color: #010b1a !important; 
     border: 1px solid #00d2ff;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
@@ -141,6 +139,59 @@
   .media-aligned-row a {
     display: block;
     width: 100%;
+  }
+
+  /* ANIMATED VIDEO CARD FEATURE PROPERTIES */
+  .animated-video-card {
+    display: block;
+    position: relative;
+    text-decoration: none !important;
+    border: 1px solid #00d2ff !important;
+    border-radius: 4px;
+    animation: neonBorderPulse 2s infinite alternate ease-in-out;
+  }
+
+  /* Removes duplicate styling layout from image inside the link card wrapper */
+  .animated-video-card img {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .border-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #010b1a; /* Blends box background color over border line */
+    color: #00d2ff !important;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    letter-spacing: 0.12em;
+    z-index: 5;
+    white-space: nowrap;
+    border: 1px solid #00d2ff;
+    border-radius: 3px;
+    animation: labelGlowPulse 1.5s infinite alternate ease-in-out;
+  }
+
+  .label-top { top: -11px; }
+  .label-bottom { bottom: -11px; }
+
+  @keyframes neonBorderPulse {
+    0% {
+      border-color: rgba(0, 210, 255, 0.4) !important;
+      box-shadow: 0 0 6px rgba(0, 210, 255, 0.2);
+    }
+    100% {
+      border-color: rgba(0, 210, 255, 1) !important;
+      box-shadow: 0 0 18px rgba(0, 210, 255, 0.6);
+    }
+  }
+
+  @keyframes labelGlowPulse {
+    0% { text-shadow: 0 0 2px rgba(0, 210, 255, 0.3); box-shadow: 0 0 4px rgba(0, 210, 255, 0.1); }
+    100% { text-shadow: 0 0 8px rgba(0, 210, 255, 0.8); box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); }
   }
 
   /* MOBILE RESPONSIVENESS */
@@ -159,6 +210,7 @@
       max-width: 100% !important;
       aspect-ratio: auto !important; 
     }
+    .border-label { font-size: 9px !important; }
   }
 </style>
 
@@ -193,7 +245,7 @@
 
   <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
     
-    <div style="flex: 1; min-width: 0; position: relative;">
+    <div style="flex: 1; min-width: 0; position: relative; padding: 10px 0;">
       <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" class="animated-video-card">
         <span class="border-label label-top">CLICK HERE</span>
         <img src="ThumbnailYT1 .jpg" alt="Watch Robotic Fundamentals Ep.1">
