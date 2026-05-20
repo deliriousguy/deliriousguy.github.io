@@ -20,7 +20,7 @@
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. NAVIGATION - UNIFORM SIZE & NO-WRAP */
+  /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
   .nav-container {
     display: flex;
     flex-wrap: nowrap;
@@ -38,14 +38,15 @@
     padding: 8px 12px; 
     font-family: monospace;
     font-size: 17px; 
+    border: 1px solid transparent !important; /* Force transparent bounding box */
+    border-radius: 4px !important;
     transition: all 0.3s ease;
   }
 
   .nav-link:hover {
-    background: rgba(0, 210, 255, 0.1);
-    border: 1px solid #00d2ff;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
-    border-radius: 4px;
+    background: rgba(0, 210, 255, 0.1) !important;
+    border: 1px solid #00d2ff !important; /* Force cyan box line on hover */
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
   }
 
   /* 4. TEXT VISIBILITY */
@@ -60,9 +61,9 @@
   /* 5.1 PERMANENT ACTIVE TAB GLOW */
   .nav-link.active {
     background: rgba(0, 210, 255, 0.15) !important;
-    border-color: #00d2ff !important;
+    border: 1px solid #00d2ff !important; /* Force permanent border */
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
   }
 
   /* TERMINAL TYPING ANIMATION */
@@ -106,7 +107,7 @@
 
 <div class="wrapper">
 
- <div class="nav-container">
+  <div class="nav-container">
     <a href="./" class="nav-link">[ HOME ]</a>
     <a href="projects" class="nav-link">[ PROJECTS ]</a>
     <a href="experience" class="nav-link active">[ EXPERIENCE ]</a>
