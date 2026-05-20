@@ -39,12 +39,12 @@
   /* 5.1 PERMANENT ACTIVE TAB GLOW */
   .nav-link.active {
     background: rgba(0, 210, 255, 0.15) !important;
-    border-color: #00d2ff !important;
+    border: 1px solid #00d2ff !important; /* Force permanent border highlight */
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
   }
 
-  /* 6. BIGGER NAVIGATION SETUP */
+  /* 6. NAVIGATION SETUP WITH BORDER FORCES */
   .nav-container {
     display: flex;
     flex-wrap: nowrap;
@@ -61,16 +61,16 @@
     font-family: monospace;
     font-size: 15px; 
     padding: 12px 20px; 
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: 1px solid transparent !important; /* Force transparent layout bounding box */
+    border-radius: 4px !important;
     transition: all 0.3s ease;
   }
 
   /* Glow effect on hover for Navigation Links */
   .nav-link:hover {
-    background: rgba(0, 210, 255, 0.1);
-    border-color: #00d2ff;
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    background: rgba(0, 210, 255, 0.1) !important;
+    border: 1px solid #00d2ff !important; /* Force bounding border on hover */
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
   }
 
   /* 6. INTERACTIVE YOUTUBE LINK BUTTON */
@@ -205,7 +205,8 @@
     <a href="./" class="nav-link">[ HOME ]</a>
     <a href="projects" class="nav-link">[ PROJECTS ]</a>
     <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
-    <a href="videos" class="nav-link active">[ VIDEOS ]</a> <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+    <a href="videos" class="nav-link active">[ VIDEOS ]</a> 
+    <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
 
   <div class="youtube-container">
