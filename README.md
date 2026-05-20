@@ -20,7 +20,7 @@
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. NAVIGATION - BIGGER & CLEANER */
+  /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
   .nav-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,15 +37,15 @@
     padding: 12px 20px;
     font-family: monospace;
     font-size: 15px;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: 1px solid transparent !important; /* Force transparent bounding box */
+    border-radius: 4px !important;
     transition: all 0.3s ease;
   }
 
   .nav-link:hover {
-    background: rgba(0, 210, 255, 0.1);
-    border-color: #00d2ff;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+    background: rgba(0, 210, 255, 0.1) !important;
+    border-color: #00d2ff !important; /* Force cyan box line on hover */
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
   }
 
   /* 4. TEXT VISIBILITY & ANIMATION */
@@ -57,7 +57,7 @@
     background: rgba(0, 210, 255, 0.15) !important;
     border-color: #00d2ff !important;
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
   }
   
   /* Give the lists some clean spacing */
