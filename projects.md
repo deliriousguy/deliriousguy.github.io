@@ -91,6 +91,7 @@
     .image-row img {
       width: 100% !important;
       max-width: 100% !important;
+      aspect-ratio: auto !important; /* Unlocks ratio on mobile for full view */
     }
   }
 </style>
@@ -121,8 +122,8 @@
   </ul>
 
   <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
-    <img src="UltrasonicSensor1.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
-    <img src="UltrasonicSensor2.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="UltrasonicSensor1.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="UltrasonicSensor2.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
   </div>
 
   <hr>
@@ -133,8 +134,8 @@
   </ul>
 
   <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
-    <img src="InsideESP32Speaker.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
-    <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="InsideESP32Speaker.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
   </div>
 
   <hr>
