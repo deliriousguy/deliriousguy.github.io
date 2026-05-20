@@ -58,6 +58,7 @@
     transition: all 0.3s ease;
   }
 
+  /* Glow effect on hover for Navigation Links */
   .nav-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
@@ -84,6 +85,7 @@
     transition: all 0.3s ease;
   }
 
+  /* Glow effect on hover for YouTube Link Button */
   .youtube-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
@@ -126,24 +128,24 @@
     width: 100%;
     text-decoration: none !important;
     border-radius: 4px;
-    overflow: visible; /* Allows text to break past edges onto the border line */
+    overflow: visible; 
   }
 
   .animated-video-card img {
-    border: 2px solid #00d2ff !important; /* Slightly thicker frame */
+    border: 2px solid #00d2ff !important; 
     animation: neonPulse 2s infinite alternate !important;
     transition: transform 0.3s ease;
   }
 
   .animated-video-card:hover img {
-    transform: scale(1.02); /* Slight lift reaction when hovered */
+    transform: scale(1.02); 
   }
 
   .border-label {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #010b1a; /* Matches content box to seamlessly cover border line */
+    background-color: #010b1a; 
     padding: 0 6px;
     font-family: monospace;
     font-size: 11px;
@@ -157,7 +159,6 @@
   .label-top { top: -9px; }
   .label-bottom { bottom: -9px; }
 
-  /* Coordinated color transitions matching your mockup */
   @keyframes neonPulse {
     0% { border-color: #00d2ff !important; box-shadow: 0 0 8px rgba(0, 210, 255, 0.4); }
     100% { border-color: #ff0055 !important; box-shadow: 0 0 18px rgba(255, 0, 85, 0.7); }
@@ -196,7 +197,7 @@
     <a href="./" class="nav-link">[ HOME ]</a>
     <a href="projects" class="nav-link">[ PROJECTS ]</a>
     <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
-    <a href="labs" class="nav-link">[ COLLEGE LABS ]</a>
+    <a href="videos" class="nav-link">[ VIDEOS ]</a>
     <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
 
