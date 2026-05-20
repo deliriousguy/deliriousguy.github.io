@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /videos
+---
 <style>
   /* 1. TECH BACKGROUND SETUP */
   html, body { 
