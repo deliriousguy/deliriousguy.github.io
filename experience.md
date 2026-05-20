@@ -57,6 +57,14 @@
   p { line-height: 1.6; margin-bottom: 20px; }
   hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px;
+  }
+
   /* TERMINAL TYPING ANIMATION */
   .terminal-title {
     display: inline-block;
