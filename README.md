@@ -105,7 +105,7 @@
 <div class="wrapper">
 
   <div class="nav-container">
-    <a href="./" class="nav-link">[ HOME ]</a>
+    <a href="./" class="nav-link active">[ HOME ]</a>
     <a href="projects" class="nav-link">[ PROJECTS ]</a>
     <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
     <a href="videos" class="nav-link">[ VIDEOS ]</a>
