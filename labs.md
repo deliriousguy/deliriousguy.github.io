@@ -58,8 +58,35 @@
     transition: all 0.3s ease;
   }
 
-  /* Glow effect on hover */
+  /* Glow effect on hover for Navigation Links */
   .nav-link:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+  }
+
+  /* 6. INTERACTIVE YOUTUBE LINK BUTTON */
+  .youtube-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .youtube-link {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #00d2ff !important;
+    text-decoration: none !important;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  /* Glow effect on hover for YouTube Link Button */
+  .youtube-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
@@ -81,7 +108,7 @@
   /* MOBILE RESPONSIVENESS FIXES */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
+    .nav-link, .youtube-link { font-size: 14px !important; padding: 8px 10px !important; white-space: normal !important; }
     .nav-container { gap: 8px; flex-wrap: wrap; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
@@ -100,11 +127,11 @@
     <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
 
-  <p align="center" style="font-family: monospace; margin-bottom: 40px;">
-    <a href="https://youtube.com/@jlbrobotics?si=rdboNTktWYJEn2gh" target="_blank" style="text-decoration: none; font-weight: bold;">
-      &gt; [ VISIT MY YOUTUBE CHANNEL: @jlbrobotics ] &lt;
+  <div class="youtube-container">
+    <a href="https://youtube.com/@jlbrobotics?si=rdboNTktWYJEn2gh" target="_blank" class="youtube-link">
+      &gt; [ VISIT MY YOUTUBE CHANNEL: Jeffery's Knowledge ] &lt;
     </a>
-  </p>
+  </div>
 
   <h1><span class="terminal-title">New Header</span></h1>
   
