@@ -49,8 +49,8 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 20px; 
-    margin-bottom: 30px;
+    gap: 12px; 
+    margin-bottom: 35px;
   }
   
   .nav-link {
