@@ -58,7 +58,6 @@
     transition: all 0.3s ease;
   }
 
-  /* Glow effect on hover for Navigation Links */
   .nav-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
@@ -85,7 +84,6 @@
     transition: all 0.3s ease;
   }
 
-  /* Glow effect on hover for YouTube Link Button */
   .youtube-link:hover {
     background: rgba(0, 210, 255, 0.1);
     border-color: #00d2ff;
@@ -111,7 +109,7 @@
     height: auto !important;
     aspect-ratio: 4/3 !important;
     object-fit: contain !important; 
-    background-color: #010b1a !important; /* TURNS THE WHITE PADDING BARS BLACK */
+    background-color: #010b1a !important; 
     border: 1px solid #00d2ff;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
@@ -119,6 +117,55 @@
   .media-aligned-row a {
     display: block;
     width: 100%;
+  }
+
+  /* 8. ANIMATED YOUTUBE CARD WITH BORDER TEXT LABELS */
+  .animated-video-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-decoration: none !important;
+    border-radius: 4px;
+    overflow: visible; /* Allows text to break past edges onto the border line */
+  }
+
+  .animated-video-card img {
+    border: 2px solid #00d2ff !important; /* Slightly thicker frame */
+    animation: neonPulse 2s infinite alternate !important;
+    transition: transform 0.3s ease;
+  }
+
+  .animated-video-card:hover img {
+    transform: scale(1.02); /* Slight lift reaction when hovered */
+  }
+
+  .border-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #010b1a; /* Matches content box to seamlessly cover border line */
+    padding: 0 6px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 10;
+    white-space: nowrap;
+    animation: labelColorPulse 2s infinite alternate;
+  }
+
+  .label-top { top: -9px; }
+  .label-bottom { bottom: -9px; }
+
+  /* Coordinated color transitions matching your mockup */
+  @keyframes neonPulse {
+    0% { border-color: #00d2ff !important; box-shadow: 0 0 8px rgba(0, 210, 255, 0.4); }
+    100% { border-color: #ff0055 !important; box-shadow: 0 0 18px rgba(255, 0, 85, 0.7); }
+  }
+
+  @keyframes labelColorPulse {
+    0% { color: #00d2ff !important; text-shadow: 0 0 4px rgba(0, 210, 255, 0.6); }
+    100% { color: #ff0055 !important; text-shadow: 0 0 4px rgba(255, 0, 85, 0.6); }
   }
 
   /* MOBILE RESPONSIVENESS FIXES */
@@ -164,10 +211,6 @@
   <h3>🎬 Episode 1: Introduction to Industrial Robotics & Cobots</h3>
   <p>Welcome to my technical video series, <strong>Robotic Fundamentals</strong>. This series focuses on deep-dive demonstrations where I explain how to configure, program, and execute operations on collaborative robots (cobots) like the Universal Robots UR3e, alongside heavy-duty industrial platforms like Fanuc systems.</p>
 
-  <p style="font-family: monospace;">Find more videos on my YouTube channel: 
-    <a href="https://www.youtube.com/@JlbRobotics" target="_blank" style="text-decoration: none;">@Jeffery's Knowledge</a>
-  </p>
-
   <hr>
 
   <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);">🛠️ Core Learning Objectives & Instrumentation</span></h3>
@@ -176,9 +219,11 @@
 
   <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
     
-    <div style="flex: 1; min-width: 0;">
-      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank">
+    <div style="flex: 1; min-width: 0; position: relative;">
+      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" class="animated-video-card">
+        <span class="border-label label-top">CLICK HERE</span>
         <img src="ThumbnailYT1 .jpg" alt="Watch Robotic Fundamentals Ep.1">
+        <span class="border-label label-bottom">CLICK HERE</span>
       </a>
     </div>
 
