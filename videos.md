@@ -239,10 +239,6 @@
 
   <hr>
 
-  <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);"> Learning Objectives & Instrumentation</span></h3>
-  
-  <p>In this module, I detail curriculum roadmaps alongside real-world hardware integration paths, breaking down safety protocols, layout setups, and deployment structures:</p>
-
   <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
     
     <div style="flex: 1; min-width: 0; position: relative; padding: 10px 0;">
@@ -254,12 +250,13 @@
     </div>
 
     <div style="flex: 1; min-width: 0;">
-      <img src="TeachPendant.jpg" alt="Industrial Robot Teach Pendant Unit">
+      <img src="WhatYouWillLearnRFE1.png" alt="Curriculum Scope: What You Will Learn">
     </div>
 
     <div style="flex: 1; min-width: 0;">
-      <img src="WhatYouWillLearnRFE1.png" alt="Curriculum Scope: What You Will Learn">
+      <img src="TeachPendant.jpg" alt="Industrial Robot Teach Pendant Unit">
     </div>
+
 
   </div>
 
