@@ -9,7 +9,7 @@
     color: #ffffff !important;
   }
 
-  /* 2. SEMI-TRANSPARENT CONTENT BOX */
+  /* 2. CONTENT BOX */
   .wrapper { 
     max-width: 900px !important; 
     margin: 40px auto !important; 
@@ -23,11 +23,10 @@
   /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
   .nav-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
     margin-bottom: 35px;
-    width: 100%;
   }
 
   .nav-link {
@@ -35,9 +34,9 @@
     color: #00d2ff !important;
     text-decoration: none !important;
     white-space: nowrap;
-    padding: 8px 12px; 
+    padding: 12px 20px;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 15px;
     border: 1px solid transparent !important; /* Force transparent bounding box */
     border-radius: 4px !important;
     transition: all 0.3s ease;
@@ -45,14 +44,23 @@
 
   .nav-link:hover {
     background: rgba(0, 210, 255, 0.1) !important;
-    border: 1px solid #00d2ff !important; /* Force cyan box line on hover */
+    border-color: #00d2ff !important; /* Force cyan box line on hover */
     box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
   }
 
   /* 4. TEXT VISIBILITY & ANIMATION */
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px !important;
+  }
   
+  /* Give the lists some clean spacing */
   ul { margin-bottom: 20px; padding-left: 20px; }
   li { margin-bottom: 8px; line-height: 1.5; }
   p { line-height: 1.6; margin-bottom: 20px; }
@@ -67,40 +75,30 @@
     0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
   }
-  
-  /* 5.1 PERMANENT ACTIVE TAB GLOW */
-  .nav-link.active {
-    background: rgba(0, 210, 255, 0.15) !important;
-    border: 1px solid #00d2ff !important; /* Force permanent border */
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px !important;
+
+  /* 5. MATCHING DARK INPUT FIELDS */
+  input, textarea {
+    background: rgba(1, 11, 26, 0.6) !important;
+    border: 1px solid #00d2ff !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
   }
 
-  /* 6. LAYOUT CLEANUP */
-  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
+  /* 6. HIDE THEME ELEMENTS */
+  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
-    .wrapper { padding: 20px !important; }
-    .nav-container { 
-      flex-wrap: wrap;
-      gap: 8px; 
-    }
-    .nav-link { 
-      font-size: 13px !important; 
-      padding: 5px !important; 
-    }
-    .image-row {
-      flex-direction: column !important;
-      gap: 15px !important;
-    }
-    .image-row img {
-      width: 100% !important;
-      max-width: 100% !important;
-      aspect-ratio: auto !important; 
-    }
+    .wrapper { padding: 20px !important; margin: 10px auto !important; }
+    .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
+    .nav-container { gap: 8px; }
+    img, video { width: 100% !important; }
   }
 </style>
 
