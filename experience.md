@@ -70,6 +70,11 @@
   @keyframes typing { from { width: 0 } to { width: 100% } }
   @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
 
+  /* 5. LAYOUT CLEANUP - AGGRESSIVELY HIDING THEME THEME INJECTIONS */
+  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
+  h1:first-of-type { display: none !important; }
+  section { width: 100% !important; float: none !important; margin: 0 !important; }
+
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
     .wrapper { padding: 20px !important; }
@@ -124,4 +129,13 @@
 
   <div style="text-align: center; margin-top: 40px; font-family: monospace;">
     <p style="margin-bottom: 10px;">Scan to view my portfolio on mobile</p>
-    <img src="jlb_portfolio_qr.png"
+    <img src="jlb_portfolio_qr.png" width="180" style="border: 2px solid #00d2ff; border-radius: 8px;" alt="Portfolio QR Code">
+  </div>
+
+  <hr>
+
+  <p align="center">
+    <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" style="font-weight:bold; text-decoration: none;">[ DOWNLOAD FULL RESUME PDF ]</a>
+  </p>
+
+</div>
