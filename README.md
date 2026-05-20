@@ -102,6 +102,8 @@
   }
 </style>
 
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2">
+
 <div class="wrapper">
 
   <div class="nav-container">
