@@ -97,10 +97,10 @@
 <div class="wrapper">
 
   <div class="nav-container">
-    <a href="./" class="nav-link">[ HOME ]</a> 
-    <a href="projects" class="nav-link">[ PROJECTS ]</a> 
-    <a href="experience" class="nav-link">[ EXPERIENCE ]</a> 
-    <a href="labs" class="nav-link">[ COLLEGE LABS ]</a> 
+    <a href="./" class="nav-link">[ HOME ]</a>
+    <a href="projects" class="nav-link">[ PROJECTS ]</a>
+    <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
+    <a href="videos" class="nav-link">[ VIDEOS ]</a>
     <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
 
