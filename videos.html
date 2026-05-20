@@ -180,24 +180,38 @@ layout: null
     .label-top { top: -11px; }
     .label-bottom { bottom: -11px; }
 
-    /* 📱 UNIVERSAL MOBILE MEDIA QUERY */
-    @media (max-width: 600px) {
-      .wrapper { padding: 20px !important; margin: 10px auto !important; }
-      .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
-      .nav-container { gap: 6px; }
+/* 📱 UNIVERSAL MOBILE MEDIA QUERY */
+  @media (max-width: 600px) {
+    .wrapper { padding: 20px !important; margin: 10px auto !important; }
+    .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
+    .nav-container { gap: 6px; }
 
-      .media-aligned-row {
-        flex-direction: column !important;
-        gap: 15px !important;
-      }
-
-      .media-aligned-row img, .media-aligned-row a {
-        width: 100% !important;
-        max-width: 100% !important;
-        aspect-ratio: auto !important; 
-      }
-      .border-label { font-size: 9px !important; }
+    /* ADD THIS PIECE HERE TO FIX THE BUTTON */
+    .youtube-link {
+      white-space: normal !important; /* Allows text to wrap safely onto 2 lines */
+      font-size: 13px !important;     /* Scales down text size so it fits mobile screen widths */
+      padding: 10px 16px !important;  /* Tighter padding bounds */
+      line-height: 1.5 !important;    /* Clean spacing between the wrapped lines */
     }
+
+    .image-row, .media-aligned-row {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+
+    .image-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important;
+    }
+
+    .media-aligned-row img, .media-aligned-row a {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important; 
+    }
+    .border-label { font-size: 9px !important; }
+  }
   </style>
 </head>
 <body>
