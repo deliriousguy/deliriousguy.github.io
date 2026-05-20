@@ -93,7 +93,7 @@
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
   }
 
-/* TERMINAL TYPING ANIMATION */
+  /* TERMINAL TYPING ANIMATION */
   .terminal-title {
     display: inline-block;
     overflow: hidden; 
@@ -106,9 +106,9 @@
   @keyframes pulseGlow {
     0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
+  }
   @keyframes typing { from { width: 0 } to { width: 100% } }
   @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
-  }
 
   /* 5. MATCHING DARK INPUT FIELDS */
   input, textarea {
@@ -123,9 +123,25 @@
   }
 
   /* 6. HIDE THEME ELEMENTS */
-  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
+  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
+
+  /* 7. ALIGNED MEDIA ROW BOX DESIGN & DARK BACKGROUND FIX */
+  .media-aligned-row img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4/3 !important;
+    object-fit: contain !important; 
+    background-color: #010b1a !important; /* Forces the internal white borders to turn black */
+    border: 1px solid #00d2ff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
+  }
+  .media-aligned-row a {
+    display: block;
+    width: 100%;
+  }
 
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 600px) {
@@ -133,6 +149,16 @@
     .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
     .nav-container { gap: 8px; }
     img, video { width: 100% !important; }
+
+    .media-aligned-row {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .media-aligned-row img, .media-aligned-row a {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important; 
+    }
   }
 </style>
 
@@ -161,7 +187,7 @@
 
   <hr>
 
-  <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);">🛠️ Core Learning Objectives & Instrumentation</span></h3>
+  <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);"> Learning Objectives & Instrumentation</span></h3>
   
   <p>In this module, I detail curriculum roadmaps alongside real-world hardware integration paths, breaking down safety protocols, layout setups, and deployment structures:</p>
 
