@@ -111,3 +111,45 @@
   </div>
 
   <h1><span class="terminal-title">
+
+<h3>Current Coursework: Robotics & Automated Manufacturing</h3>
+  <p>This section contains documented technical results from my circuit analysis and robotics labs at the North Harris campus.</p>
+  
+  <p style="font-family: monospace;">Find more videos on my YouTube channel: 
+    <a href="https://www.youtube.com/@JlbRobotics" target="_blank" style="text-decoration: none;">@Jeffery's Knowledge</a>
+  </p>
+
+  <hr>
+
+  <h2>⚡ AC/DC Circuits Lab</h2>
+  <ul>
+    <li>Project: Combined Series-Parallel Circuits</li>
+    <li>Focus: Measuring voltage drops and verifying Ohm's Law in complex resistor networks.</li>
+  </ul>
+
+  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
+    <img src="ACDC_Lab_1.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="AC/DC Lab Bench Setup">
+    <img src="ACDC_Lab_2.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Circuit Analysis Testing">
+  </div>
+
+  <hr>
+
+  <h2>🤖 PLC & Automation Lab</h2>
+  <ul>
+    <li>Focus: Programming logic for automated manufacturing systems and Universal Robots (UR) integration.</li>
+    <li>Current Task: Troubleshooting ladder logic for synchronized industrial arm movements.</li>
+  </ul>
+
+  <p align="center" style="margin-top: 25px;">
+    <video src="RoboticsLab.mp4" width="80%" style="border: 1px solid #00d2ff; border-radius: 4px; box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);" controls>
+      Your browser does not support the video tag.
+    </video>
+  </p>
+
+  <hr>
+
+  <p align="center">
+    <a href="./" style="font-weight:bold; text-decoration: none;">&lt;&lt; Back to Main Portfolio</a>
+  </p>
+
+</div>
