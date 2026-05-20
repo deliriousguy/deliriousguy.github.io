@@ -66,8 +66,16 @@
     0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
     100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
   }
+  
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px;
+  }
 
-  /* 5. LAYOUT CLEANUP */
+  /* 6. LAYOUT CLEANUP */
   header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
