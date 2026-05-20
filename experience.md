@@ -23,7 +23,7 @@
   /* 3. NAVIGATION - UNIFORM SIZE & NO-WRAP */
   .nav-container {
     display: flex;
-    flex-wrap: nowrap; /* Forces one line on desktop */
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 12px;
     margin-bottom: 35px;
@@ -34,7 +34,7 @@
     font-weight: bold;
     color: #00d2ff !important;
     text-decoration: none !important;
-    white-space: nowrap; /* Stops brackets from jumping lines */
+    white-space: nowrap;
     padding: 8px 12px; 
     font-family: monospace;
     font-size: 17px; 
@@ -52,10 +52,10 @@
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
 
-  /* 5. LAYOUT CLEANUP */
-  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
-  h1:first-of-type { display: none !important; }
-  section { width: 100% !important; float: none !important; margin: 0 !important; }
+  ul { margin-bottom: 20px; padding-left: 20px; }
+  li { margin-bottom: 8px; line-height: 1.5; }
+  p { line-height: 1.6; margin-bottom: 20px; }
+  hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
   /* TERMINAL TYPING ANIMATION */
   .terminal-title {
@@ -76,45 +76,52 @@
     .nav-container { flex-wrap: wrap; gap: 8px; }
     .nav-link { font-size: 13px !important; padding: 5px !important; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
-    img, video { width: 100% !important; margin-bottom: 15px !important; }
+    
+    .image-row {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .image-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important;
+    }
   }
 </style>
 
 <link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
 
-<div class="nav-container">
-  <a href="./" class="nav-link">[ HOME ]</a>
-  <a href="projects" class="nav-link">[ PROJECTS ]</a>
-  <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
-  <a href="labs" class="nav-link">[ COLLEGE LABS ]</a>
-  <a href="/JEFFERYBAKER_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
-</div>
+<div class="wrapper">
 
-# <span class="terminal-title">Professional Experience</span>
+  <div class="nav-container">
+    <a href="./" class="nav-link">[ HOME ]</a>
+    <a href="projects" class="nav-link">[ PROJECTS ]</a>
+    <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
+    <a href="labs" class="nav-link">[ COLLEGE LABS ]</a>
+    <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+  </div>
 
-### Aerospace-Grade Fabrication
-* **Role:** Welder at Communications and Power Industries (CPI).
-* **Expertise:** High-precision Aluminum MIG Welding within the communications industry.
-* **Focus:** Maintaining structural integrity and metallurgy standards for aerospace-grade equipment.
+  <h1><span class="terminal-title">Professional Experience</span></h1>
 
-<p align="center">
-  <img src="AluWeld.jpg" width="45%" alt="Aluminum Weld Detail" style="border-radius: 4px; border: 1px solid #00d2ff; margin: 1%;">
-  <img src="20241213_092023.jpg" width="45%" alt="Welding Fabrication" style="border-radius: 4px; border: 1px solid #00d2ff; margin: 1%;">
-</p>
+  <h3>Aerospace-Grade Fabrication</h3>
+  <ul>
+    <li>Role: Welder at Communications and Power Industries (CPI).</li>
+    <li>Expertise: High-precision Aluminum MIG Welding within the communications industry.</li>
+    <li>Focus: Maintaining structural integrity and metallurgy standards for aerospace-grade equipment.</li>
+  </ul>
 
----
+  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
+    <img src="AluWeld.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; border: 1px solid #00d2ff;" alt="Aluminum Weld Detail">
+    <img src="20241213_092023.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; border: 1px solid #00d2ff;" alt="Welding Fabrication">
+  </div>
 
-### Industrial Maintenance & Infrastructure
-* **General Technician I (TxDOT):** Technical maintenance and operational support for state-level infrastructure.
-* **Floor Staff (Inspire Rock):** Previously managed facility operations and safety in a technical environment.
+  <hr>
 
-<div style="text-align: center; margin-top: 40px;">
-  <p>Scan to view my portfolio on mobile</p>
-  <img src="jlb_portfolio_qr.png" width="180" style="border: 2px solid #00d2ff; border-radius: 8px;">
-</div>
+  <h3>Industrial Maintenance & Infrastructure</h3>
+  <ul>
+    <li>General Technician I (TxDOT): Technical maintenance and operational support for state-level infrastructure.</li>
+  </ul>
 
----
-
-<p align="center">
-  <a href="/JEFFERYBAKER_Resume.pdf" target="_blank" style="font-weight:bold;">[ DOWNLOAD FULL RESUME PDF ]</a>
-</p>
+  <div style="text-align: center; margin-top: 40px; font-family: monospace;">
+    <p style="margin-bottom: 10px;">Scan to view my portfolio on mobile</p>
+    <img src
