@@ -36,7 +36,15 @@
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
-  /* 5. BIGGER NAVIGATION SETUP */
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px;
+  }
+
+  /* 6. BIGGER NAVIGATION SETUP */
   .nav-container {
     display: flex;
     flex-wrap: nowrap;
