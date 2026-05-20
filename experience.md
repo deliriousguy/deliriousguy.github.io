@@ -102,9 +102,9 @@
   }
 </style>
 
-<div class="wrapper">
+<link rel="icon" type="image/png" href="/favicon.png?v=7">
 
-<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
+<div class="wrapper">
   
   <div class="nav-container">
     <a href="./" class="nav-link">[ HOME ]</a>
