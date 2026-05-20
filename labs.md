@@ -111,6 +111,16 @@
     .nav-link, .youtube-link { font-size: 14px !important; padding: 8px 10px !important; white-space: normal !important; }
     .nav-container { gap: 8px; flex-wrap: wrap; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
+    
+    .image-row {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+    .image-row img {
+      width: 100% !important;
+      max-width: 100% !important;
+      aspect-ratio: auto !important;
+    }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
 </style>
@@ -133,8 +143,25 @@
     </a>
   </div>
 
-  <h1><span class="terminal-title">New Header</span></h1>
+  <h1><span class="terminal-title">Featured Series: Robotic Fundamentals</span></h1>
   
-  <p>Your content goes here...</p>
+  <h3>🎬 Episode 1: Introduction to Industrial Robotics & Cobots</h3>
+  <p>Welcome to my technical video series, <strong>Robotic Fundamentals</strong>. This series focuses on deep-dive demonstrations where I explain how to configure, program, and execute operations on collaborative robots (cobots) like the Universal Robots UR3e, alongside heavy-duty industrial platforms like Fanuc systems.</p>
+
+  <p align="center" style="margin: 25px 0;">
+    <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" style="display: inline-block;">
+      <img src="ThumbnailYT1 .jpg" style="width: 85%; max-width: 100%; border: 1px solid #00d2ff; border-radius: 6px; box-shadow: 0 0 20px rgba(0, 210, 255, 0.25); transition: all 0.3s ease;" alt="Watch Robotic Fundamentals Ep.1">
+    </a>
+  </p>
+
+  <hr>
+
+  <h3>🛠️ Core Learning Objectives & Instrumentation</h3>
+  <p>In this module, I detail curriculum roadmaps alongside real-world hardware integration paths, breaking down safety protocols, layout setups, and deployment structures:</p>
+
+  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 25px 0;">
+    <img src="WhatYouWillLearnRFE1.png" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Curriculum Scope: What You Will Learn">
+    <img src="TeachPendant.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Industrial Robot Teach Pendant Unit">
+  </div>
 
 </div>
