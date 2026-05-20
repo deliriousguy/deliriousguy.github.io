@@ -92,7 +92,7 @@
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
   }
 
-  /* TERMINAL TYPING ANIMATION (used for main header) */
+  /* TERMINAL TYPING ANIMATION */
   .terminal-title {
     display: inline-block;
     overflow: hidden; 
@@ -116,10 +116,10 @@
       flex-direction: column !important;
       gap: 15px !important;
     }
-    .media-aligned-row img, .media-aligned-row video, .media-aligned-row a {
+    .media-aligned-row img, .media-aligned-row a {
       width: 100% !important;
       max-width: 100% !important;
-      aspect-ratio: auto !important;
+      aspect-ratio: auto !important; /* Restores natural ratios on mobile screens */
     }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
@@ -154,18 +154,22 @@
   
   <p>In this module, I detail curriculum roadmaps alongside real-world hardware integration paths, breaking down safety protocols, layout setups, and deployment structures:</p>
 
-  <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: stretch; gap: 1.5%; width: 100%; margin: 25px 0;">
+  <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
+    
     <div style="flex: 1; min-width: 0;">
-      <img src="WhatYouWillLearnRFE1.png" style="width: 100%; height: auto; border: 1px solid #00d2ff; border-radius: 4px;" alt="Curriculum Scope: What You Will Learn">
-    </div>
-    <div style="flex: 1; min-width: 0;">
-      <img src="TeachPendant.jpg" style="width: 100%; height: auto; border: 1px solid #00d2ff; border-radius: 4px;" alt="Industrial Robot Teach Pendant Unit">
-    </div>
-    <div style="flex: 1; min-width: 0;">
-      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" style="display: inline-block; width: 100%; height: 100%;">
-        <img src="ThumbnailYT1 .jpg" style="width: 100%; height: auto; border: 1px solid #00d2ff; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);" alt="Watch Robotic Fundamentals Ep.1">
+      <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" style="display: block; width: 100%;">
+        <img src="ThumbnailYT1 .jpg" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);" alt="Watch Robotic Fundamentals Ep.1">
       </a>
     </div>
+
+    <div style="flex: 1; min-width: 0;">
+      <img src="TeachPendant.jpg" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Industrial Robot Teach Pendant Unit">
+    </div>
+
+    <div style="flex: 1; min-width: 0;">
+      <img src="WhatYouWillLearnRFE1.png" style="width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Curriculum Scope: What You Will Learn">
+    </div>
+
   </div>
 
 </div>
