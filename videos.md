@@ -214,8 +214,6 @@
   }
 </style>
 
-<link rel="icon" type="image/png" href="/favicon.png?v=7">
-
 <div class="wrapper">
 
   <div class="nav-container">
