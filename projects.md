@@ -102,7 +102,7 @@
   }
 </style>
 
-<link rel="icon" type="image/png" href="https://jlb-robotics.me/favicon.png?v=6">
+<link rel="icon" type="image/png" href="/favicon.png?v=7">
 
 <div class="wrapper">
 
