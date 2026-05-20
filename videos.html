@@ -186,18 +186,15 @@ layout: null
     .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
     .nav-container { gap: 6px; }
 
-  /* Cleaned Terminal Banner Setup for Mobile Phones */
+    /* FORCES YOUTUBE BUTTON TO STAY ON ONE LINE PERFECTLY */
     .youtube-link {
-      display: block !important;       /* Forces the button to expand into a full-width dashboard banner */
-      white-space: normal !important;   /* Allows safe text wrapping */
-      font-size: 12px !important;       /* Drops font size slightly for a cleaner monospace grid fit */
-      padding: 14px 10px !important;    /* Boosts vertical padding to make it a tactile touch target */
-      line-height: 1.6 !important;     /* Adds clean breathing room between the text lines */
-      text-align: center !important;   /* Centers the wrapped text lines inside the block */
-      background: rgba(0, 210, 255, 0.05) !important; /* Adds a tech glow fill to frame the banner layout */
-      border-color: rgba(0, 210, 255, 0.8) !important; /* Ensures the neon line stays sharp */
+      display: inline-block !important; /* Keeps its original button profile */
+      white-space: nowrap !important;   /* Strictly forbids the text from splitting into two lines */
+      font-size: min(12px, 2.7vw) !important; /* Dynamically scales the font down based on phone width */
+      padding: 10px 6px !important;     /* Compresses internal side padding to save horizontal space */
+      letter-spacing: 0.02em !important; /* Tightens monospace spacing slightly for an exact fit */
     }
-    
+
     .image-row, .media-aligned-row {
       flex-direction: column !important;
       gap: 15px !important;
