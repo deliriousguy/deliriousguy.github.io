@@ -186,14 +186,18 @@ layout: null
     .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
     .nav-container { gap: 6px; }
 
-    /* ADD THIS PIECE HERE TO FIX THE BUTTON */
+  /* Cleaned Terminal Banner Setup for Mobile Phones */
     .youtube-link {
-      white-space: normal !important; /* Allows text to wrap safely onto 2 lines */
-      font-size: 13px !important;     /* Scales down text size so it fits mobile screen widths */
-      padding: 10px 16px !important;  /* Tighter padding bounds */
-      line-height: 1.5 !important;    /* Clean spacing between the wrapped lines */
+      display: block !important;       /* Forces the button to expand into a full-width dashboard banner */
+      white-space: normal !important;   /* Allows safe text wrapping */
+      font-size: 12px !important;       /* Drops font size slightly for a cleaner monospace grid fit */
+      padding: 14px 10px !important;    /* Boosts vertical padding to make it a tactile touch target */
+      line-height: 1.6 !important;     /* Adds clean breathing room between the text lines */
+      text-align: center !important;   /* Centers the wrapped text lines inside the block */
+      background: rgba(0, 210, 255, 0.05) !important; /* Adds a tech glow fill to frame the banner layout */
+      border-color: rgba(0, 210, 255, 0.8) !important; /* Ensures the neon line stays sharp */
     }
-
+    
     .image-row, .media-aligned-row {
       flex-direction: column !important;
       gap: 15px !important;
