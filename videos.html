@@ -186,13 +186,22 @@ layout: null
     .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
     .nav-container { gap: 6px; }
 
-    /* FORCES YOUTUBE BUTTON TO STAY ON ONE LINE PERFECTLY */
+    /* FORCES THE BUTTON WRAPPER TO TRACK DEAD-CENTER ON PHONE SCREENS */
+    .youtube-container {
+      display: flex !important;
+      justify-content: center !important;
+      width: 100% !important;
+      margin-bottom: 30px !important;
+    }
+
+    /* KEEPS TEXT ON ONE LINE AND COMPresses BOUNDARIES */
     .youtube-link {
-      display: inline-block !important; /* Keeps its original button profile */
-      white-space: nowrap !important;   /* Strictly forbids the text from splitting into two lines */
-      font-size: min(12px, 2.7vw) !important; /* Dynamically scales the font down based on phone width */
-      padding: 10px 6px !important;     /* Compresses internal side padding to save horizontal space */
-      letter-spacing: 0.02em !important; /* Tightens monospace spacing slightly for an exact fit */
+      display: inline-block !important; 
+      white-space: nowrap !important;   
+      font-size: min(12px, 2.7vw) !important; 
+      padding: 10px 6px !important;     
+      letter-spacing: 0.02em !important; 
+      margin: 0 auto !important; /* Secondary backup alignment anchor */
     }
 
     .image-row, .media-aligned-row {
