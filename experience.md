@@ -124,4 +124,4 @@
 
   <div style="text-align: center; margin-top: 40px; font-family: monospace;">
     <p style="margin-bottom: 10px;">Scan to view my portfolio on mobile</p>
-    <img src
+    <img src="jlb_portfolio_qr.png"
