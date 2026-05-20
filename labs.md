@@ -105,15 +105,16 @@
   @keyframes typing { from { width: 0 } to { width: 100% } }
   @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
 
-  /* New General Class for Media Row (Binary row layouts still use .image-row) */
+  /* 7. IMAGE ROW LAYOUT & INTERNAL BACKGROUND FIX */
   .media-aligned-row img {
     width: 100% !important;
     height: auto !important;
     aspect-ratio: 4/3 !important;
-    object-fit: contain !important; /* Changed from cover to ensure full image visibility */
+    object-fit: contain !important; 
+    background-color: #010b1a !important; /* TURNS THE WHITE PADDING BARS BLACK */
     border: 1px solid #00d2ff;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; /* Subtle shadow for all */
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
   }
   .media-aligned-row a {
     display: block;
@@ -134,7 +135,7 @@
     .media-aligned-row img, .media-aligned-row a {
       width: 100% !important;
       max-width: 100% !important;
-      aspect-ratio: auto !important; /* Resets aspect ratio on mobile screens to stack naturally */
+      aspect-ratio: auto !important; 
     }
     img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
