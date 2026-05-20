@@ -42,7 +42,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     gap: 20px; 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   .nav-link {
@@ -84,17 +84,7 @@
     .nav-link { font-size: 15px !important; padding: 8px 10px !important; }
     .nav-container { gap: 8px; flex-wrap: wrap; }
     .terminal-title { font-size: 16px !important; white-space: normal !important; border-right: none !important; animation: none !important; display: block !important; }
-    
-    .image-row {
-      flex-direction: column !important;
-      gap: 15px !important;
-    }
-    .image-row img {
-      width: 100% !important;
-      max-width: 100% !important;
-      aspect-ratio: auto !important;
-    }
-    video { width: 100% !important; }
+    img, video { width: 100% !important; margin-bottom: 15px !important; }
   }
 </style>
 
@@ -110,46 +100,14 @@
     <a href="JEFFERY_BAKER_Resume_Orange.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
   </div>
 
-  <h1><span class="terminal-title">
+  <p align="center" style="font-family: monospace; margin-bottom: 40px;">
+    <a href="https://youtube.com/@jlbrobotics?si=rdboNTktWYJEn2gh" target="_blank" style="text-decoration: none; font-weight: bold;">
+      &gt; [ VISIT MY YOUTUBE CHANNEL: @jlbrobotics ] &lt;
+    </a>
+  </p>
 
-<h3>Current Coursework: Robotics & Automated Manufacturing</h3>
-  <p>This section contains documented technical results from my circuit analysis and robotics labs at the North Harris campus.</p>
+  <h1><span class="terminal-title">New Header</span></h1>
   
-  <p style="font-family: monospace;">Find more videos on my YouTube channel: 
-    <a href="https://www.youtube.com/@JlbRobotics" target="_blank" style="text-decoration: none;">@Jeffery's Knowledge</a>
-  </p>
-
-  <hr>
-
-  <h2>⚡ AC/DC Circuits Lab</h2>
-  <ul>
-    <li>Project: Combined Series-Parallel Circuits</li>
-    <li>Focus: Measuring voltage drops and verifying Ohm's Law in complex resistor networks.</li>
-  </ul>
-
-  <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
-    <img src="ACDC_Lab_1.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="AC/DC Lab Bench Setup">
-    <img src="ACDC_Lab_2.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Circuit Analysis Testing">
-  </div>
-
-  <hr>
-
-  <h2>🤖 PLC & Automation Lab</h2>
-  <ul>
-    <li>Focus: Programming logic for automated manufacturing systems and Universal Robots (UR) integration.</li>
-    <li>Current Task: Troubleshooting ladder logic for synchronized industrial arm movements.</li>
-  </ul>
-
-  <p align="center" style="margin-top: 25px;">
-    <video src="RoboticsLab.mp4" width="80%" style="border: 1px solid #00d2ff; border-radius: 4px; box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);" controls>
-      Your browser does not support the video tag.
-    </video>
-  </p>
-
-  <hr>
-
-  <p align="center">
-    <a href="./" style="font-weight:bold; text-decoration: none;">&lt;&lt; Back to Main Portfolio</a>
-  </p>
+  <p>Your content goes here...</p>
 
 </div>
