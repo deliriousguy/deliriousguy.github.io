@@ -20,7 +20,7 @@
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
   }
 
-  /* 3. NAVIGATION - CALIBRATED SIZE & NO-WRAP */
+  /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
   .nav-container {
     display: flex;
     flex-wrap: nowrap;
@@ -38,14 +38,15 @@
     padding: 8px 12px; 
     font-family: monospace;
     font-size: 17px;
+    border: 1px solid transparent !important; /* Force transparent bounding box */
+    border-radius: 4px !important;
     transition: all 0.3s ease;
   }
 
   .nav-link:hover {
-    background: rgba(0, 210, 255, 0.1);
-    border: 1px solid #00d2ff;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
-    border-radius: 4px;
+    background: rgba(0, 210, 255, 0.1) !important;
+    border: 1px solid #00d2ff !important; /* Force cyan box line on hover */
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
   }
 
   /* 4. TEXT VISIBILITY & ANIMATION */
@@ -70,13 +71,13 @@
   /* 5.1 PERMANENT ACTIVE TAB GLOW */
   .nav-link.active {
     background: rgba(0, 210, 255, 0.15) !important;
-    border-color: #00d2ff !important;
+    border: 1px solid #00d2ff !important; /* Force permanent border */
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
   }
 
   /* 6. LAYOUT CLEANUP */
-  header, .sidebar, #header, aside, footer, .site-footer { display: none !important; }
+  header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
   h1:first-of-type { display: none !important; }
   section { width: 100% !important; float: none !important; margin: 0 !important; }
 
@@ -129,8 +130,8 @@
   </ul>
 
   <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
-    <img src="UltrasonicSensor1.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
-    <img src="UltrasonicSensor2.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="UltrasonicSensor1.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Ultrasonic Sensor Assembly">
+    <img src="UltrasonicSensor2.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Hardware Setup Analysis">
   </div>
 
   <hr>
@@ -163,13 +164,13 @@
     <ul>
       <li>Electrical Wire: 16 Gauge Solid Core Wire.</li>
       <li>Audio Patching: 3.5mm Aux Cable.</li>
-      <li>Outer Shell: Custom 3D-Printed Enclosure (designed in SolidWorks over 2 days and printed on my Bambu Lab P1S over 3 days).</li>
+      <li>Outer Shell: Custom 3D-Printed Enclosure (designed in SolidWorks over 2 days and printed on my Bambu Lab P2S over 3 days).</li>
     </ul>
   </div>
 
   <div class="image-row" style="display: flex; justify-content: center; gap: 2%; width: 100%; margin: 20px 0;">
-    <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
-    <img src="InsideESP32Speaker.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;">
+    <img src="ESP32Speaker_On3DPrinter.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Enclosure Printing Process">
+    <img src="InsideESP32Speaker.jpg" style="width: 48% !important; max-width: 48% !important; aspect-ratio: 4/3; object-fit: cover; border: 1px solid #00d2ff; border-radius: 4px;" alt="Internal Circuitry Integration">
   </div>
 
   <hr>
