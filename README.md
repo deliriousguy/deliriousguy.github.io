@@ -51,6 +51,14 @@
   /* 4. TEXT VISIBILITY & ANIMATION */
   p, li, label, span, em, strong { color: #ffffff !important; }
   h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
+
+  /* 5.1 PERMANENT ACTIVE TAB GLOW */
+  .nav-link.active {
+    background: rgba(0, 210, 255, 0.15) !important;
+    border-color: #00d2ff !important;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
+    border-radius: 4px;
+  }
   
   /* Give the lists some clean spacing */
   ul { margin-bottom: 20px; padding-left: 20px; }
