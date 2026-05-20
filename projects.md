@@ -104,6 +104,8 @@
 
 <div class="wrapper">
 
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2">
+
   <div class="nav-container">
     <a href="./" class="nav-link">[ HOME ]</a>
     <a href="projects" class="nav-link active">[ PROJECTS ]</a>
