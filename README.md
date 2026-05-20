@@ -25,8 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 12px;
+    margin-bottom: 35px;
   }
 
   .nav-link {
