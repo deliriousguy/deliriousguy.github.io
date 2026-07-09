@@ -188,6 +188,21 @@ layout: null
       gap: 15px !important;
     }
 
+      /* Forces Hero text and image to stack vertically on phones */
+    .hero-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .hero-image {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 250px; /* Prevents the image from being massively tall on a phone */
+      margin: 0 auto;
+    }
+
     /* Unshackle the standard double images to use full smartphone screen width */
     .image-row img {
       width: 100% !important;
@@ -203,6 +218,30 @@ layout: null
     }
     .border-label { font-size: 9px !important; }
   }
+
+    /* 9. HERO SECTION (Side-by-Side Bio & Picture) */
+  .hero-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .hero-text {
+    flex: 1; /* Takes up remaining space on the left */
+  }
+  .hero-image {
+    flex: 0 0 32%; /* Constrains image container to ~1/3 of the width */
+    max-width: 280px; 
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4; /* Keeps your 3000x4000 proportion perfect */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #00d2ff;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+  }
 </style>
 </head>
 <body>
@@ -215,24 +254,27 @@ layout: null
       <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
       <a href="videos" class="nav-link">[ VIDEOS ]</a>
       <a href="Jeffery_Baker_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
-    </div>
-    
-    <hr>
-    
-    <h1><span class="terminal-title">Jeffery Baker | Robotics - Automated Manufacturing</span></h1>
-    
-    <p>
-      I am a dedicated Robotics - Automated Manufacturing student in Houston, Tx. I constantly apply my knowledge of electro-mechanical hardware and smart automation through hands-on design, installation, and troubleshooting hurdles. 
-    </p>
 
-    <p>
-      Beyond the classroom, I document my hardware builds and explore automated systems on my YouTube channel, Jeffery's Knowledge. I am currently seeking to join an innovative company in a high-impact role—such as Robotics Maintenance, Automation, Systems Integration, or Sensor Maintenance—where I can immediately deploy my self-directed troubleshooting skills to optimize operations and drive industrial efficiency.
-    </p>
+  <div class="hero-section">
+      
+     <div class="hero-text">
+        <p>
+          I am a dedicated Robotics - Automated Manufacturing student in Houston, Tx. I constantly apply my knowledge of electro-mechanical hardware and smart automation through hands-on design, installation, and troubleshooting hurdles. 
+        </p>
+        <p>
+          Beyond the classroom, I document my hardware builds and explore automated systems on my YouTube channel, Jeffery's Knowledge. I am currently seeking to join an innovative company in a high-impact role—such as Robotics Maintenance, Automation, Systems Integration, or Sensor Maintenance—where I can immediately deploy my self-directed troubleshooting skills to optimize operations and drive industrial efficiency.
+        </p>
+        <p>
+          <em>My core competencies and specific technical proficiencies are detailed below.</em>
+        </p>
+      </div>
 
-    <p>
-      <em>My core competencies and specific technical proficiencies are detailed below.</em>
-    </p>
-    
+      <div class="hero-image">
+        <img src="RBTX.jpg" alt="Jeffery Baker - Automation Profile">
+     </div>
+
+  </div>
+      
     <hr>
 
     <h3>🛠️ Core Competencies</h3>
