@@ -188,6 +188,18 @@ layout: null
       gap: 15px !important;
     }
 
+    /* Forces Grid and Contact sections to stack on phones */
+    .competencies-grid {
+      grid-template-columns: 1fr; 
+    }
+    .contact-layout {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-form {
+      width: 100%;
+    }
+
       /* Forces Hero text and image to stack vertically on phones */
     .hero-section {
       flex-direction: column;
@@ -242,6 +254,51 @@ layout: null
     border: 1px solid #00d2ff;
     box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
   }
+
+    /* 10. BOTTOM SECTION UPGRADES (Grid & Contact Flex) */
+  .competencies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-left: 0; /* Removes default list indent */
+  }
+  .competencies-grid li {
+    background: rgba(0, 210, 255, 0.05);
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    padding: 15px;
+    border-radius: 4px;
+    list-style-type: none; /* Removes the standard bullet points */
+    transition: all 0.3s ease;
+  }
+  .competencies-grid li:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: rgba(0, 210, 255, 0.6);
+  }
+
+  .contact-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .contact-info {
+    flex: 1; /* Takes up left side */
+  }
+  .contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .contact-info li {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: rgba(0, 210, 255, 0.05);
+    border-left: 3px solid #00d2ff; /* Creates a cool structural accent line */
+  }
+  .contact-form {
+    flex: 1.5; /* Gives the form slightly more room on the right */
+  }
+    
 </style>
 </head>
 <body>
@@ -277,14 +334,14 @@ layout: null
       
     <hr>
 
-    <h3>🛠️ Core Competencies</h3>
-    <ul>
-      <li><strong>Automation:</strong> PLC Programming (Allen Bradley and Horner Automation), Universal Robots, Fanuc Robots, Industry 4.0.</li>
-      <li><strong>Electronics:</strong> Circuit Analysis, Sensors, Industrial Electronics.</li>
-      <li><strong>Fabrication:</strong> Aluminum MIG Welding, Automated Machining.</li>
-      <li><strong>Systems:</strong> Electro-Hydraulics & Pneumatics, 3D Printing (Bambu Labs P2S).</li>
-      <li><strong>Software:</strong> CAD/SolidWorks, GitHub, VSCode/IDEs, Bambu/Creality/Cura Slicers, Cscape, Studio 5000, PACTware, IODD's.</li>
-      <li><strong>Methodology:</strong> Proactive problem solver / Analytical troubleshooter, Researcher.</li>
+<h3>🛠️ Core Competencies</h3>
+    <ul class="competencies-grid">
+      <li><strong>Automation:</strong><br>PLC Programming (Allen Bradley and Horner Automation), Universal Robots, Fanuc Robots, Industry 4.0.</li>
+      <li><strong>Electronics:</strong><br>Circuit Analysis, Sensors, Industrial Electronics.</li>
+      <li><strong>Fabrication:</strong><br>Aluminum MIG Welding, Automated Machining.</li>
+      <li><strong>Systems:</strong><br>Electro-Hydraulics & Pneumatics, 3D Printing (Bambu Labs P2S).</li>
+      <li><strong>Software:</strong><br>CAD/SolidWorks, GitHub, VSCode/IDEs, Bambu/Creality/Cura Slicers, Cscape, Studio 5000, PACTware, IODD's.</li>
+      <li><strong>Methodology:</strong><br>Proactive problem solver / Analytical troubleshooter, Researcher.</li>
     </ul>
 
     <hr>
@@ -300,18 +357,26 @@ layout: null
     <hr>
 
     <h3>📬 Quick Connect</h3>
-    <ul>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeffery-baker-15b767218/" target="_blank">Jeffery L Baker</a></li>
-      <li><strong>Email:</strong> Jlb107078@gmail.com</li>
-      <li><strong>Location:</strong> Spring, Texas</li>
-    </ul>
+    <div class="contact-layout">
+      
+      <div class="contact-info">
+        <ul>
+          <li><strong>LinkedIn:</strong> <br><a href="https://www.linkedin.com/in/jeffery-baker-15b767218/" target="_blank">Jeffery L Baker</a></li>
+          <li><strong>Email:</strong> <br>Jlb107078@gmail.com</li>
+          <li><strong>Location:</strong> <br>Spring, Texas</li>
+        </ul>
+      </div>
 
-    <form action="https://formspree.io/f/mpqjeoyw" method="POST" style="max-width: 500px; margin-top: 25px;">
-      <label style="font-weight: bold; font-family: monospace; color: #00d2ff !important;">Send a Quick Message:</label><br><br>
-      <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 15px;" required><br>
-      <textarea name="message" placeholder="Your Message" style="width: 100%; height: 100px; padding: 10px; margin-bottom: 15px;" required></textarea><br>
-      <button type="submit" style="background-color: #00d2ff; color: #010b1a; padding: 12px 24px; border: none; cursor: pointer; font-weight: bold; font-family: monospace; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);">SEND MESSAGE</button>
-    </form>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mpqjeoyw" method="POST">
+          <label style="font-weight: bold; font-family: monospace; color: #00d2ff !important;">Send a Quick Message:</label><br><br>
+          <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 15px;" required><br>
+          <textarea name="message" placeholder="Your Message" style="width: 100%; height: 100px; padding: 10px; margin-bottom: 15px;" required></textarea><br>
+          <button type="submit" style="background-color: #00d2ff; color: #010b1a; padding: 12px 24px; border: none; cursor: pointer; font-weight: bold; font-family: monospace; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); width: 100%;">SEND MESSAGE</button>
+        </form>
+      </div>
+
+    </div>
 
   </div>
 
