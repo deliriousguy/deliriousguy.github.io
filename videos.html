@@ -6,42 +6,79 @@ layout: null
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Featured Series: Robotic Fundamentals | Jeffery Baker</title>
-  
+  <title>Videos | Jeffery Baker - Solutions Architect</title>
+
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
 
-<script data-goatcounter="https://jeffery-baker.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-  
+  <script data-goatcounter="https://jeffery-baker.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
   <style>
-    /* 1. TECH BACKGROUND SETUP */
-    html, body { 
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
       background-image: url('tech-bg.jpg') !important;
       background-size: cover !important;
       background-position: center !important;
       background-attachment: fixed !important;
-      background-color: #010b1a !important; 
+      background-color: #010b1a !important;
       color: #ffffff !important;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
-    /* 2. CONTENT BOX */
-    .wrapper { 
-      max-width: 900px !important; 
-      margin: 40px auto !important; 
+    .wrapper {
+      max-width: 940px !important;
+      margin: 40px auto !important;
       padding: 40px !important;
-      background: rgba(1, 11, 26, 0.85) !important; 
-      border: 1px solid #00d2ff !important; 
-      border-radius: 8px !important;
-      box-shadow: 0 0 25px rgba(0, 210, 255, 0.3) !important;
+      background: rgba(1, 11, 26, 0.88) !important;
+      border: 1px solid #00d2ff !important;
+      border-radius: 10px !important;
+      box-shadow: 0 0 30px rgba(0, 210, 255, 0.28) !important;
+      backdrop-filter: blur(6px);
     }
 
-    /* 3. NAVIGATION - FORCED BORDERS & HOVER GLOW */
+    .site-header {
+      text-align: center;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 210, 255, 0.25);
+    }
+
+    .site-header h1 {
+      margin: 0 0 8px 0;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      color: #00d2ff !important;
+      text-shadow: 0 0 10px rgba(0, 210, 255, 0.45);
+    }
+
+    .role-badge {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 0.95rem;
+      color: #ffffff !important;
+      background: rgba(0, 210, 255, 0.12);
+      border: 1px solid rgba(0, 210, 255, 0.4);
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .role-badge a {
+      color: #00d2ff !important;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .nav-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
 
     .nav-link {
@@ -49,250 +86,110 @@ layout: null
       color: #00d2ff !important;
       text-decoration: none !important;
       white-space: nowrap;
-      padding: 12px 20px;
+      padding: 12px 22px;
       font-family: monospace;
       font-size: 15px;
-      border: 1px solid transparent !important; 
-      border-radius: 4px !important;
-      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 210, 255, 0.25) !important;
+      border-radius: 5px !important;
+      background: rgba(1, 11, 26, 0.5);
+      transition: all 0.25s ease;
+      text-align: center;
     }
 
     .nav-link:hover {
-      background: rgba(0, 210, 255, 0.1) !important;
-      border-color: #00d2ff !important; 
-      box-shadow: 0 0 10px rgba(0, 210, 255, 0.4) !important;
-    }
-
-    /* 4. TEXT VISIBILITY & GLOBAL GLOW */
-    p, li, label, span, em, strong { color: #ffffff !important; }
-    h1, h2, h3, a { color: #00d2ff !important; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
-
-    /* 5. PERMANENT ACTIVE TAB GLOW */
-    .nav-link.active {
       background: rgba(0, 210, 255, 0.15) !important;
       border-color: #00d2ff !important;
-      box-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-      border-radius: 4px !important;
+      box-shadow: 0 0 12px rgba(0, 210, 255, 0.45) !important;
     }
-    
-    ul { margin-bottom: 20px; padding-left: 20px; }
-    li { margin-bottom: 8px; line-height: 1.5; }
-    p { line-height: 1.6; margin-bottom: 20px; }
-    hr { border: 0; border-top: 1px solid rgba(0, 210, 255, 0.3); margin: 30px 0; }
 
-    /* 6. INTERACTIVE YOUTUBE LINK BUTTON */
-    .youtube-container {
+    .nav-link.active {
+      background: rgba(0, 210, 255, 0.2) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.5) !important;
+    }
+
+    .yt-cta-box {
       text-align: center;
-      margin-bottom: 40px;
+      padding: 45px 20px;
+      background: rgba(0, 210, 255, 0.04);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      border-radius: 8px;
     }
 
-    .youtube-link {
+    .yt-button {
       display: inline-block;
-      white-space: nowrap;
+      font-family: monospace;
+      font-size: 1.05rem;
       font-weight: bold;
       color: #00d2ff !important;
       text-decoration: none !important;
-      font-family: monospace;
-      font-size: 15px;
-      padding: 12px 24px;
-      border: 1px solid transparent;
-      border-radius: 4px;
+      padding: 16px 28px;
+      border: 1px solid #00d2ff;
+      border-radius: 6px;
+      background: rgba(0, 210, 255, 0.12);
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.35);
       transition: all 0.3s ease;
     }
 
-    .youtube-link:hover {
-      background: rgba(0, 210, 255, 0.1);
-      border-color: #00d2ff;
-      box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    .yt-button:hover {
+      background: rgba(0, 210, 255, 0.25);
+      box-shadow: 0 0 25px rgba(0, 210, 255, 0.7);
+      transform: translateY(-2px);
     }
 
-    /* VIDEOS SPECIFIC TERMINAL TYPING ANIMATION RULES */
-    .terminal-title {
-      display: inline-block;
-      overflow: hidden; 
-      border-right: .15em solid #00d2ff; 
-      white-space: nowrap; 
-      margin: 0 auto; 
-      letter-spacing: .10em; 
-      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    @media (max-width: 768px) {
+      html, body {
+        background-attachment: scroll !important;
+      }
+      .wrapper {
+        margin: 15px 12px !important;
+        padding: 22px 18px !important;
+      }
+      .site-header h1 {
+        font-size: 1.55rem;
+      }
+      .role-badge {
+        font-size: 0.82rem;
+      }
+      .nav-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .nav-link {
+        font-size: 13px !important;
+        padding: 10px 8px !important;
+      }
+      .yt-button {
+        font-size: 0.9rem;
+        padding: 14px 16px;
+        width: 100%;
+      }
     }
-    @keyframes pulseGlow {
-      0% { text-shadow: 0 0 5px rgba(0, 210, 255, 0.5); }
-      100% { text-shadow: 0 0 15px rgba(0, 210, 255, 0.9), 0 0 20px rgba(0, 210, 255, 0.4); }
-    }
-    @keyframes typing { from { width: 0 } to { width: 100% } }
-    @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #00d2ff; } }
-    
-    @keyframes neonBorderPulse {
-      0% { border-color: rgba(0, 210, 255, 0.4) !important; box-shadow: 0 0 6px rgba(0, 210, 255, 0.2); }
-      100% { border-color: rgba(0, 210, 255, 1) !important; box-shadow: 0 0 18px rgba(0, 210, 255, 0.6); }
-    }
-    @keyframes labelGlowPulse {
-      0% { text-shadow: 0 0 2px rgba(0, 210, 255, 0.3); box-shadow: 0 0 4px rgba(0, 210, 255, 0.1); }
-      100% { text-shadow: 0 0 8px rgba(0, 210, 255, 0.8); box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); }
-    }
-
-    /* HIGH-TECH RADAR BLINK FOR THE CLICK PROMPT */
-  .click-pulse {
-    color: #00d2ff !important;
-    font-weight: bold;
-    animation: terminalPromptBlink 1.5s infinite steps(2);
-  }
-
-  @keyframes terminalPromptBlink {
-    0%, 100% { 
-      opacity: 1; 
-      text-shadow: 0 0 12px rgba(0, 210, 255, 0.9), 0 0 4px rgba(0, 210, 255, 0.5); 
-    }
-    50% { 
-      opacity: 0.2; 
-      text-shadow: none; 
-    }
-  }
-
-    /* 7. HIDE THEME ELEMENTS */
-    header, .sidebar, #header, aside, footer, .site-footer, .project-name, .project-tagline, .site-title { display: none !important; }
-    h1:first-of-type { display: none !important; }
-    section { width: 100% !important; float: none !important; margin: 0 !important; }
-
-    /* 8. ALIGNED MEDIA ROW BOX DESIGN & DARK BACKGROUND FIX */
-    .media-aligned-row img {
-      width: 100% !important;
-      height: auto !important;
-      aspect-ratio: 4/3 !important;
-      object-fit: contain !important; 
-      background-color: #010b1a !important; 
-      border: 1px solid #00d2ff;
-      border-radius: 4px;
-      box-shadow: 0 0 10px rgba(0, 210, 255, 0.15) !important; 
-    }
-    .media-aligned-row a {
-      display: block;
-      width: 100%;
-    }
-
-    /* ANIMATED VIDEO CARD FEATURE PROPERTIES */
-    .animated-video-card {
-      display: block;
-      position: relative;
-      text-decoration: none !important;
-      border: 1px solid #00d2ff !important;
-      border-radius: 4px;
-      animation: neonBorderPulse 2s infinite alternate ease-in-out;
-    }
-    .animated-video-card img { border: none !important; box-shadow: none !important; }
-
-    .border-label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #010b1a;
-      color: #00d2ff !important;
-      font-family: monospace;
-      font-size: 11px;
-      font-weight: bold;
-      padding: 2px 8px;
-      letter-spacing: 0.12em;
-      z-index: 5;
-      white-space: nowrap;
-      border: 1px solid #00d2ff;
-      border-radius: 3px;
-      animation: labelGlowPulse 1.5s infinite alternate ease-in-out;
-    }
-    .label-top { top: -11px; }
-    .label-bottom { bottom: -11px; }
-
-/* 📱 UNIVERSAL MOBILE MEDIA QUERY */
-  @media (max-width: 600px) {
-    .wrapper { padding: 20px !important; margin: 10px auto !important; }
-    .nav-link { font-size: 13px !important; padding: 8px 12px !important; }
-    .nav-container { gap: 6px; }
-
-    /* FORCES THE BUTTON WRAPPER TO TRACK DEAD-CENTER ON PHONE SCREENS */
-    .youtube-container {
-      display: flex !important;
-      justify-content: center !important;
-      width: 100% !important;
-      margin-bottom: 30px !important;
-    }
-
-    /* KEEPS THE NEW SHORTENED TEXT STRING ON ONE LINE */
-    .youtube-link {
-      display: inline-block !important; 
-      white-space: nowrap !important;   
-      font-size: min(12px, 3.1vw) !important; /* Adjusted scaling to match the "CLICK HERE TO..." string length */
-      padding: 10px 8px !important;     
-      letter-spacing: 0.01em !important; 
-      margin: 0 auto !important; 
-    }
-
-    .image-row, .media-aligned-row {
-      flex-direction: column !important;
-      gap: 15px !important;
-    }
-
-    .image-row img {
-      width: 100% !important;
-      max-width: 100% !important;
-      aspect-ratio: auto !important;
-    }
-
-    .media-aligned-row img, .media-aligned-row a {
-      width: 100% !important;
-      max-width: 100% !important;
-      aspect-ratio: auto !important; 
-    }
-    .border-label { font-size: 9px !important; }
-  }
   </style>
 </head>
 <body>
 
   <div class="wrapper">
 
-    <div class="nav-container">
-      <a href="./" class="nav-link">[ HOME ]</a>
-      <a href="projects" class="nav-link">[ PROJECTS ]</a>
-      <a href="experience" class="nav-link">[ EXPERIENCE ]</a>
-      <a href="videos" class="nav-link active">[ VIDEOS ]</a> 
-      <a href="Jeffery_Baker_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+    <div class="site-header">
+      <h1>JEFFERY BAKER</h1>
+      <div class="role-badge">
+        Solutions Architect @ <a href="https://www.teamaec.com" target="_blank">Automation Engineering Company (AEC)</a>
+      </div>
     </div>
 
-    <div class="youtube-container">
-    <a href="https://youtube.com/@jlbrobotics?si=rdboNTktWYJEn2gh" target="_blank" class="youtube-link">
-      &gt; [ <span class="click-pulse">CLICK HERE TO VISIT MY YOUTUBE CHANNEL</span> ] &lt;
-    </a>
-  </div>
+    <div class="nav-container">
+      <a href="./" class="nav-link">[ HOME ]</a>
+      <a href="videos" class="nav-link active">[ VIDEOS ]</a>
+      <a href="Jeffery_Baker_Resume.pdf" target="_blank" class="nav-link">[ RESUME ]</a>
+      <a href="extra" class="nav-link">[ EXTRA ]</a>
+    </div>
 
-    <h1><span class="terminal-title">Featured Series: Robotic Fundamentals</span></h1>
-    
-    <h3>🎬 Episode 1: Introduction to Industrial Robotics & Cobots</h3>
-    <p>Welcome to my technical video series, <strong>Robotic Fundamentals</strong>. This series focuses on deep-dive demonstrations where I explain how to configure, program, and execute operations on collaborative robots (cobots) like the Universal Robots UR3e, alongside heavy-duty industrial platforms like Fanuc systems.</p>
-
-    <hr>
-
-    <h3><span style="display: inline-block; animation: pulseGlow 2s infinite alternate; text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);"> Learning Objectives & Instrumentation</span></h3>
-    
-    <p>This module covers the core essentials of getting a robot moving. I walk through powering on the system, navigating the teach pendant, using free drive, activating an end-of-arm gripper, and configuring a basic program by setting up waypoints.</p>
-
-    <div class="media-aligned-row" style="display: flex; justify-content: center; align-items: center; gap: 1.5%; width: 100%; margin: 25px 0;">
-      
-      <div style="flex: 1; min-width: 0; position: relative; padding: 10px 0;">
-        <a href="https://youtu.be/gpvk6R97cx4?si=3UoBg4MYX4fRFkA6" target="_blank" class="animated-video-card">
-          <span class="border-label label-top">CLICK HERE</span>
-          <img src="ThumbnailYT1 .jpg" alt="Watch Robotic Fundamentals Ep.1">
-          <span class="border-label label-bottom">CLICK HERE</span>
-        </a>
-      </div>
-
-      <div style="flex: 1; min-width: 0;">
-        <img src="WhatYouWillLearnRFE1.png" alt="Curriculum Scope: What You Will Learn">
-      </div>
-
-      <div style="flex: 1; min-width: 0;">
-        <img src="TeachPendant.jpg" alt="Industrial Robot Teach Pendant Unit">
-      </div>
-
+    <div class="yt-cta-box">
+      <a href="https://youtube.com/@jlbrobotics?si=rdboNTktWYJEn2gh" target="_blank" class="yt-button">
+        &gt; [ CLICK HERE TO VISIT MY YOUTUBE CHANNEL ] &lt;
+      </a>
     </div>
 
   </div>
