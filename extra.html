@@ -32,16 +32,21 @@ layout: null
       -webkit-font-smoothing: antialiased;
     }
 
-    /* 2. MAIN CONTENT CONTAINER */
+    /* Forces standard SDR range so whiteboards don't blow out in Chrome/Edge */
+    img {
+      dynamic-range-limit: standard;
+      filter: brightness(0.98) contrast(1.03);
+    }
+
+    /* 2. MAIN CONTENT CONTAINER (Removed backdrop-filter blur for sharp image rendering) */
     .wrapper {
       max-width: 940px !important;
       margin: 40px auto !important;
       padding: 40px !important;
-      background: rgba(1, 11, 26, 0.88) !important;
+      background: rgba(1, 11, 26, 0.90) !important;
       border: 1px solid #00d2ff !important;
       border-radius: 10px !important;
       box-shadow: 0 0 30px rgba(0, 210, 255, 0.28) !important;
-      backdrop-filter: blur(6px);
     }
 
     /* 3. TOP IDENTITY HEADER */
@@ -167,7 +172,7 @@ layout: null
       font-family: monospace;
     }
 
-    /* 6. PHOTO GALLERIES & CARDS */
+    /* 6. PHOTO GALLERIES & FRAMES (Exact same 2-column & 2x2 grid layout) */
     .split-showcase {
       display: grid;
       grid-template-columns: 1fr 1.25fr;
@@ -206,16 +211,19 @@ layout: null
       border: 1px solid #00d2ff;
       margin-bottom: 12px;
       display: block;
+      cursor: zoom-in;
     }
 
     .photo-card.robot-tall img {
       aspect-ratio: 3 / 4;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: #010b1a;
     }
 
     .photo-card.landscape img {
       aspect-ratio: 4 / 3;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: #010b1a;
     }
 
     .photo-caption {
@@ -308,7 +316,9 @@ layout: null
     <!-- ROW 1: ROBOT CELL & COURSEWORK DESK -->
     <div class="split-showcase">
       <div class="photo-card robot-tall">
-        <img src="20260928_121519.jpg" alt="FANUC Robot M-20iB/25 in Houston Training Cell">
+        <a href="20260928_121519.jpg" target="_blank">
+          <img src="20260928_121519.jpg" alt="FANUC Robot M-20iB/25 in Houston Training Cell">
+        </a>
         <p class="photo-caption">
           <strong>FANUC M-20iB/25 Training Cell</strong>
           Hands-on programming and tooling configuration with the 6-axis FANUC M-20iB/25 industrial robot and pneumatic gripper assembly.
@@ -316,7 +326,9 @@ layout: null
       </div>
 
       <div class="photo-card landscape">
-        <img src="IMG_0070.jpg" alt="FANUC Academy HandlingTool Coursework and Manual">
+        <a href="IMG_0070.jpg" target="_blank">
+          <img src="IMG_0070.jpg" alt="FANUC Academy HandlingTool Coursework and Manual">
+        </a>
         <p class="photo-caption">
           <strong>HandlingTool Curriculum &amp; System Architecture</strong>
           Coursework covering R-30iB Plus controllers, iPendant navigation, servo motor/serial pulse coder architecture, alarm diagnostics, and file manipulation.
@@ -326,12 +338,14 @@ layout: null
 
     <hr>
 
-    <!-- ROW 2: WHITEBOARD LOGIC & COORDINATE FRAMES -->
+    <!-- ROW 2: WHITEBOARD LOGIC & COORDINATE FRAMES (2x2 GRID) -->
     <h3>📐 Teach Pendant Logic, Coordinate Frames &amp; Cycle Routines</h3>
 
     <div class="photo-grid-2x2">
       <div class="photo-card landscape">
-        <img src="20261001_142145.jpg" alt="FANUC Pick and Place Subroutines on Whiteboard">
+        <a href="20261001_142145.jpg" target="_blank">
+          <img src="20261001_142145.jpg" alt="FANUC Pick and Place Subroutines on Whiteboard">
+        </a>
         <p class="photo-caption">
           <strong>Pick &amp; Place Subroutines (MAIN_PROD / PICK_BOX / PLACE_BOX)</strong>
           Structuring modular call routines using User Frames (<code>UF=1</code>, <code>UF=2</code>), Robot Outputs (<code>RO[7]</code>) for gripper actuation, and Z-axis stacking offsets in Position Registers.
@@ -339,7 +353,9 @@ layout: null
       </div>
 
       <div class="photo-card landscape">
-        <img src="20260930_163051.jpg" alt="FANUC Cycle Timer and Indirect Register Addressing Logic">
+        <a href="20260930_163051.jpg" target="_blank">
+          <img src="20260930_163051.jpg" alt="FANUC Cycle Timer and Indirect Register Addressing Logic">
+        </a>
         <p class="photo-caption">
           <strong>Cycle Timing &amp; Indirect Register Addressing (REG_RESET)</strong>
           Using <code>TIMER[1]</code> to benchmark cycle times alongside an argument-driven register reset loop utilizing indirect addressing (<code>R[R[1]]=0</code>).
@@ -347,7 +363,9 @@ layout: null
       </div>
 
       <div class="photo-card landscape">
-        <img src="20260929_141802.jpg" alt="FANUC Coordinate Systems and User Frame Offset Math">
+        <a href="20260929_141802.jpg" target="_blank">
+          <img src="20260929_141802.jpg" alt="FANUC Coordinate Systems and User Frame Offset Math">
+        </a>
         <p class="photo-caption">
           <strong>Coordinate Systems &amp; Frame Manipulation</strong>
           Configuring <code>JOINT</code>, <code>WORLD</code>, <code>USER</code>, <code>TOOL</code>, and <code>JGFRM</code> coordinate systems and dynamically shifting User Frames via Position Register elements.
@@ -355,7 +373,9 @@ layout: null
       </div>
 
       <div class="photo-card landscape">
-        <img src="20260929_141748.jpg" alt="Multi-Frame Fixture Diagram UF=1 and UF=2">
+        <a href="20260929_141748.jpg" target="_blank">
+          <img src="20260929_141748.jpg" alt="Multi-Frame Fixture Diagram UF=1 and UF=2">
+        </a>
         <p class="photo-caption">
           <strong>Multi-Plane User Frame Setup (UF=1 &amp; UF=2)</strong>
           Mapping separate planar coordinate frames for flat (<code>BROWN UF=1</code>) and inclined (<code>WHITE UF=2</code>) workpieces on a shared fixture table.
@@ -365,7 +385,9 @@ layout: null
 
     <!-- ROW 3: INSTRUCTOR & CLASS WRAP-UP -->
     <div class="photo-card">
-      <img src="20261001_160822.jpg" alt="FANUC Instructor Whiteboard Sign-off" style="max-height: 380px; object-fit: cover;">
+      <a href="20261001_160822.jpg" target="_blank">
+        <img src="20261001_160822.jpg" alt="FANUC Instructor Whiteboard Sign-off" style="max-height: 440px; object-fit: contain; background-color: #010b1a;">
+      </a>
       <p class="photo-caption">
         <strong>Training Completion at FANUC America (Houston, TX)</strong>
         Instructor sign-off from the 4-day HandlingTool Operation &amp; Programming course.
