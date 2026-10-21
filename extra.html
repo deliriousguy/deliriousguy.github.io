@@ -14,6 +14,7 @@ layout: null
           async src="//gc.zgo.at/count.js"></script>
 
   <style>
+    /* 1. GLOBAL RESET & TECH BACKGROUND */
     *, *::before, *::after {
       box-sizing: border-box;
     }
@@ -28,8 +29,10 @@ layout: null
       background-color: #010b1a !important;
       color: #ffffff !important;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
 
+    /* 2. MAIN CONTENT CONTAINER */
     .wrapper {
       max-width: 940px !important;
       margin: 40px auto !important;
@@ -39,9 +42,9 @@ layout: null
       border-radius: 10px !important;
       box-shadow: 0 0 30px rgba(0, 210, 255, 0.28) !important;
       backdrop-filter: blur(6px);
-      min-height: 400px;
     }
 
+    /* 3. TOP IDENTITY HEADER */
     .site-header {
       text-align: center;
       margin-bottom: 25px;
@@ -74,6 +77,11 @@ layout: null
       font-weight: bold;
     }
 
+    .role-badge a:hover {
+      text-decoration: underline;
+    }
+
+    /* 4. NAVIGATION TABS */
     .nav-container {
       display: flex;
       flex-wrap: wrap;
@@ -101,6 +109,7 @@ layout: null
       background: rgba(0, 210, 255, 0.15) !important;
       border-color: #00d2ff !important;
       box-shadow: 0 0 12px rgba(0, 210, 255, 0.45) !important;
+      transform: translateY(-1px);
     }
 
     .nav-link.active {
@@ -109,28 +118,159 @@ layout: null
       box-shadow: 0 0 15px rgba(0, 210, 255, 0.5) !important;
     }
 
+    /* 5. TYPOGRAPHY & TRAINING METADATA */
+    p, li, span, strong {
+      color: #ffffff !important;
+    }
+
+    h2, h3, a {
+      color: #00d2ff !important;
+      text-shadow: 0 0 5px rgba(0, 210, 255, 0.4);
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    p {
+      line-height: 1.65;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(0, 210, 255, 0.3);
+      margin: 32px 0;
+    }
+
+    .training-meta {
+      background: rgba(0, 210, 255, 0.05);
+      border-left: 3px solid #00d2ff;
+      padding: 16px 20px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 28px;
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .training-meta strong {
+      color: #00d2ff !important;
+      font-family: monospace;
+    }
+
+    /* 6. PHOTO GALLERIES & CARDS */
+    .split-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 24px;
+    }
+
+    .photo-grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .photo-card {
+      background: rgba(0, 210, 255, 0.04);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+    }
+
+    .photo-card:hover {
+      border-color: #00d2ff;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.22);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #00d2ff;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .photo-card.robot-tall img {
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+
+    .photo-card.landscape img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .photo-caption strong {
+      color: #00d2ff !important;
+      font-family: monospace;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* 7. MOBILE & TABLET OPTIMIZATION */
     @media (max-width: 768px) {
       html, body {
         background-attachment: scroll !important;
       }
+
       .wrapper {
         margin: 15px 12px !important;
         padding: 22px 18px !important;
       }
+
       .site-header h1 {
         font-size: 1.55rem;
       }
+
       .role-badge {
         font-size: 0.82rem;
+        padding: 6px 10px;
       }
+
       .nav-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        margin-bottom: 25px;
       }
+
       .nav-link {
         font-size: 13px !important;
         padding: 10px 8px !important;
+      }
+
+      .split-showcase,
+      .photo-grid-2x2 {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card.robot-tall img,
+      .photo-card.landscape img {
+        aspect-ratio: auto;
       }
     }
   </style>
@@ -139,6 +279,7 @@ layout: null
 
   <div class="wrapper">
 
+    <!-- TOP HEADER -->
     <div class="site-header">
       <h1>JEFFERY BAKER</h1>
       <div class="role-badge">
@@ -146,6 +287,7 @@ layout: null
       </div>
     </div>
 
+    <!-- NAVIGATION TABS -->
     <div class="nav-container">
       <a href="./" class="nav-link">[ HOME ]</a>
       <a href="videos" class="nav-link">[ VIDEOS ]</a>
@@ -153,7 +295,82 @@ layout: null
       <a href="extra" class="nav-link active">[ EXTRA ]</a>
     </div>
 
-    <!-- ADD FUTURE EXTRA CONTENT BELOW THIS LINE -->
+    <!-- FANUC TRAINING SECTION -->
+    <h2>🤖 FANUC America — HandlingTool Operation &amp; Programming</h2>
+
+    <div class="training-meta">
+      <strong>Course:</strong> HandlingTool Operation &amp; Programming (4 Days)<br>
+      <strong>Date:</strong> Beginning of October 2026 (Sept 28 – Oct 1, 2026)<br>
+      <strong>Facility:</strong> FANUC America Houston Training Center — TX- 3423 North Sam Houston Pkwy West #300, Houston, TX 77086<br>
+      <strong>Robot Platform:</strong> FANUC Robot M-20iB/25
+    </div>
+
+    <!-- ROW 1: ROBOT CELL & COURSEWORK DESK -->
+    <div class="split-showcase">
+      <div class="photo-card robot-tall">
+        <img src="20260928_121519.jpg" alt="FANUC Robot M-20iB/25 in Houston Training Cell">
+        <p class="photo-caption">
+          <strong>FANUC M-20iB/25 Training Cell</strong>
+          Hands-on programming and tooling configuration with the 6-axis FANUC M-20iB/25 industrial robot and pneumatic gripper assembly.
+        </p>
+      </div>
+
+      <div class="photo-card landscape">
+        <img src="IMG_0070.jpg" alt="FANUC Academy HandlingTool Coursework and Manual">
+        <p class="photo-caption">
+          <strong>HandlingTool Curriculum &amp; System Architecture</strong>
+          Coursework covering R-30iB Plus controllers, iPendant navigation, servo motor/serial pulse coder architecture, alarm diagnostics, and file manipulation.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- ROW 2: WHITEBOARD LOGIC & COORDINATE FRAMES -->
+    <h3>📐 Teach Pendant Logic, Coordinate Frames &amp; Cycle Routines</h3>
+
+    <div class="photo-grid-2x2">
+      <div class="photo-card landscape">
+        <img src="20261001_142145.jpg" alt="FANUC Pick and Place Subroutines on Whiteboard">
+        <p class="photo-caption">
+          <strong>Pick &amp; Place Subroutines (MAIN_PROD / PICK_BOX / PLACE_BOX)</strong>
+          Structuring modular call routines using User Frames (<code>UF=1</code>, <code>UF=2</code>), Robot Outputs (<code>RO[7]</code>) for gripper actuation, and Z-axis stacking offsets in Position Registers.
+        </p>
+      </div>
+
+      <div class="photo-card landscape">
+        <img src="20260930_163051.jpg" alt="FANUC Cycle Timer and Indirect Register Addressing Logic">
+        <p class="photo-caption">
+          <strong>Cycle Timing &amp; Indirect Register Addressing (REG_RESET)</strong>
+          Using <code>TIMER[1]</code> to benchmark cycle times alongside an argument-driven register reset loop utilizing indirect addressing (<code>R[R[1]]=0</code>).
+        </p>
+      </div>
+
+      <div class="photo-card landscape">
+        <img src="20260929_141802.jpg" alt="FANUC Coordinate Systems and User Frame Offset Math">
+        <p class="photo-caption">
+          <strong>Coordinate Systems &amp; Frame Manipulation</strong>
+          Configuring <code>JOINT</code>, <code>WORLD</code>, <code>USER</code>, <code>TOOL</code>, and <code>JGFRM</code> coordinate systems and dynamically shifting User Frames via Position Register elements.
+        </p>
+      </div>
+
+      <div class="photo-card landscape">
+        <img src="20260929_141748.jpg" alt="Multi-Frame Fixture Diagram UF=1 and UF=2">
+        <p class="photo-caption">
+          <strong>Multi-Plane User Frame Setup (UF=1 &amp; UF=2)</strong>
+          Mapping separate planar coordinate frames for flat (<code>BROWN UF=1</code>) and inclined (<code>WHITE UF=2</code>) workpieces on a shared fixture table.
+        </p>
+      </div>
+    </div>
+
+    <!-- ROW 3: INSTRUCTOR & CLASS WRAP-UP -->
+    <div class="photo-card">
+      <img src="20261001_160822.jpg" alt="FANUC Instructor Whiteboard Sign-off" style="max-height: 380px; object-fit: cover;">
+      <p class="photo-caption">
+        <strong>Training Completion at FANUC America (Houston, TX)</strong>
+        Instructor sign-off from the 4-day HandlingTool Operation &amp; Programming course.
+      </p>
+    </div>
 
   </div>
 
