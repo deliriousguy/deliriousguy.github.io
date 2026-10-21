@@ -32,16 +32,21 @@ layout: null
       -webkit-font-smoothing: antialiased;
     }
 
-    /* 2. MAIN CONTENT CONTAINER */
+    /* Force standard SDR rendering so Chrome/Edge won't blow out monitors or whiteboards */
+    img {
+      dynamic-range-limit: standard;
+      filter: brightness(0.99) contrast(1.01);
+    }
+
+    /* 2. MAIN CONTENT CONTAINER (Removed backdrop-filter blur for sharp image rendering) */
     .wrapper {
       max-width: 940px !important;
       margin: 40px auto !important;
       padding: 40px !important;
-      background: rgba(1, 11, 26, 0.88) !important;
+      background: rgba(1, 11, 26, 0.90) !important;
       border: 1px solid #00d2ff !important;
       border-radius: 10px !important;
       box-shadow: 0 0 30px rgba(0, 210, 255, 0.28) !important;
-      backdrop-filter: blur(6px);
     }
 
     /* 3. TOP IDENTITY HEADER */
@@ -158,7 +163,7 @@ layout: null
       margin: 32px 0;
     }
 
-    /* 6. HERO SECTION (Bio & Portrait) */
+    /* 6. HERO SECTION (Same frame, fits full AEC logo & portrait cleanly) */
     .hero-section {
       display: flex;
       gap: 32px;
@@ -178,8 +183,6 @@ layout: null
     .hero-image img {
       width: 100%;
       height: auto;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
       border-radius: 8px;
       border: 1px solid #00d2ff;
       box-shadow: 0 0 18px rgba(0, 210, 255, 0.3);
@@ -219,7 +222,7 @@ layout: null
       margin-bottom: 6px;
     }
 
-    /* 8. FEATURED WORKSTATION BANNER */
+    /* 8. FEATURED WORKSTATION FRAME (Same frame, no zoom-cropping) */
     .workstation-card {
       background: rgba(0, 210, 255, 0.04);
       border: 1px solid rgba(0, 210, 255, 0.25);
@@ -230,8 +233,7 @@ layout: null
 
     .workstation-card img {
       width: 100%;
-      max-height: 420px;
-      object-fit: cover;
+      height: auto;
       border-radius: 6px;
       border: 1px solid #00d2ff;
       margin-bottom: 12px;
@@ -408,7 +410,9 @@ layout: null
       </div>
 
       <div class="hero-image">
-        <img src="Me_AEC_Logo_Above.jpg" alt="Jeffery Baker - Solutions Architect at Automation Engineering Company">
+        <a href="Me_AEC_Logo_Above.jpg" target="_blank">
+          <img src="Me_AEC_Logo_Above.jpg" alt="Jeffery Baker - Solutions Architect at Automation Engineering Company">
+        </a>
       </div>
     </div>
 
@@ -422,16 +426,16 @@ layout: null
         Turnkey Robotic Cell Concepts, Cycle-Time Analysis, End-of-Arm Tooling (EOAT) Selection, Technical Proposals.
       </li>
       <li>
-        <strong>CAD & Mechanical Design</strong>
-        SolidWorks 3D Part & Assembly Modeling, Custom Chuck Jaws & Tooling, Plant Floor Layouts, 2D Engineering Prints.
+        <strong>CAD &amp; Mechanical Design</strong>
+        SolidWorks 3D Part &amp; Assembly Modeling, Custom Chuck Jaws &amp; Tooling, Plant Floor Layouts, 2D Engineering Prints.
       </li>
       <li>
-        <strong>Industrial Robotics & Controls</strong>
-        Fanuc Robotics, Universal Robots (e-Series Pro Track Certified), Allen-Bradley (Studio 5000) & Horner PLCs, IO-Link.
+        <strong>Industrial Robotics &amp; Controls</strong>
+        Fanuc Robotics, Universal Robots (e-Series Pro Track Certified), Allen-Bradley (Studio 5000) &amp; Horner PLCs, IO-Link.
       </li>
       <li>
-        <strong>Fabrication & Prototyping</strong>
-        Aerospace-Grade Aluminum MIG Welding, CNC Machining, Electro-Hydraulics & Pneumatics, Additive Manufacturing (Bambu Lab P2S).
+        <strong>Fabrication &amp; Prototyping</strong>
+        Aerospace-Grade Aluminum MIG Welding, CNC Machining, Electro-Hydraulics &amp; Pneumatics, Additive Manufacturing (Bambu Lab P2S).
       </li>
     </ul>
 
@@ -441,12 +445,14 @@ layout: null
     <h3>🚀 Recent Highlights</h3>
     <ul>
       <li><strong>Current Role:</strong> Designing custom automated cells, EOAT tooling, and robot cycle-time solutions as a Solutions Architect at Automation Engineering Company (AEC).</li>
-      <li><strong>Industrial Robotics Training:</strong> Advanced Fanuc robotics programming (User/Tool frames, register logic, cycle timers, and palletizing offsets) & IMTS / Automate 2026 participant.</li>
-      <li><strong>Credentials:</strong> Completing my <a href="https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm" target="_blank">A.A.S. in Robotics & Automated Manufacturing</a> at Lone Star College (Graduating December 2026).</li>
+      <li><strong>Industrial Robotics Training:</strong> Advanced Fanuc robotics programming (User/Tool frames, register logic, cycle timers, and palletizing offsets) &amp; IMTS / Automate 2026 participant.</li>
+      <li><strong>Credentials:</strong> Completing my <a href="https://www.lonestar.edu/programs-of-study/Engineering-Technician-AAS-Automated-Manufacturing-Technician.htm" target="_blank">A.A.S. in Robotics &amp; Automated Manufacturing</a> at Lone Star College (Graduating December 2026).</li>
     </ul>
 
     <div class="workstation-card">
-      <img src="20261002_165341.jpg" alt="SolidWorks 3D EOAT Jaw Design and Engineering Drawings">
+      <a href="20261002_165341.jpg" target="_blank">
+        <img src="20261002_165341.jpg" alt="SolidWorks 3D EOAT Jaw Design and Engineering Drawings">
+      </a>
       <p class="workstation-caption">
         <strong>SolidWorks Engineering Workflow:</strong> Designing custom 3-jaw chuck tooling and fixture fingers from 2D technical specifications to full 3D CAD assembly.
       </p>
